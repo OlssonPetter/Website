@@ -7,7 +7,7 @@
     </head>
     <body>
             <div class="form-box">
-    <div class="head">Welcome Back</div>        
+    <div class="head">Welcome Back Petter</div>        
     <form action="#" id="login-form">
         <div class="form-group">
           <label class="label-control">
@@ -18,7 +18,7 @@
         <div class="form-group">
           <label class="label-control">
             <span class="label-text">Password</span>
-          </label> 
+          </label>
           <input type="password" name="password" class="form-control" />
         </div>
         <input type="submit" value="Login" class="btn" />
