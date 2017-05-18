@@ -182,4 +182,17 @@ input[type=submit]:hover {
      background:  rgba(255, 255, 255, 0.2);
 } 
 
+#formLogin
+{
+    background: rgba(213, 204, 204, 0.7);
+    box-shadow: 10px 10px 5px #888888;
+    text-align: center;
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15%;
+    width: 50%;
+    border-width: thick;
+    border-style: groove;
+}
 
