@@ -1,3 +1,7 @@
+<?php
+require 'anslutning.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

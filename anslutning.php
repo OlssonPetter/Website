@@ -11,4 +11,5 @@
     {
         die("Connection failed: " . $conn->connect_error);    
     }
+    echo"Du är ansluten din lilla jävel";
 ?>
