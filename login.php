@@ -8,7 +8,8 @@
     <body>
             <div class="form-box">
     <div class="head">Welcome Back Petter</div>
-    <p>Oskars testparagraf</p>     
+    <p>Oskars testparagraf</p>  
+    <p>Petters testpargraf</p>
     <form action="#" id="login-form">
         <div class="form-group">
           <label class="label-control">
