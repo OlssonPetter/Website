@@ -182,17 +182,65 @@ input[type=submit]:hover {
      background:  rgba(255, 255, 255, 0.2);
 } 
 
-#formLogin
-{
-    background: rgba(213, 204, 204, 0.7);
-    box-shadow: 10px 10px 5px #888888;
-    text-align: center;
-    display: inline-block;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 15%;
-    width: 50%;
-    border-width: thick;
-    border-style: groove;
+
+form {
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  text-align: center;
+  width: 380px;
+  height: 280px;
+  background: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 1px 0px, rgba(0, 0, 0, 0.09804) 0px 1px 2px 0px;
+margin-top: 15%;
 }
 
+form input {
+  display: block;
+  background: transparent;
+  margin: 0 auto;
+  border-style: none;
+  border-bottom: 1px solid #454545;
+  font-size: 22px;
+  padding: 10px 10px 10px 5px;
+}
+
+form input:nth-child(2) {
+  margin: 20px auto 0 auto;
+}
+
+form input:focus {
+  border-bottom: 2px solid #4a89dc;
+}
+
+button {
+  margin: 50px 0;
+  width: 315px;
+  height: 46px;
+  text-align: center;
+  padding: 8px 0 8px 8;
+  background: #4a89dc;
+  color: #eee;
+  font-size: 22px;
+  border-style: none;
+  border-bottom: 3px solid #3160B6;
+  transition: all .2s linear;
+}
+
+button:hover {
+  background: #357bd8;
+}
+
+p {
+  margin: -5px 0;
+  color: #636363;
+}
+
+a {
+  color: #357bd8;
+  text-decoration: none;
+}
+
+footer {
+  margin: 170px 0 0 0;
+  text-align: center;
+}

@@ -6,28 +6,13 @@
     <title>ACTIV8</title>
     </head>
     <body>
-        <form id="formLogin" action="login.php" method="post">
-        
-        <div>
-        <p class = "Formulär"> 
-        <label for="EpostLogin">E-post</label>
-        </p>
-        
-        <p>
-        <input type="text" id="epostlogin" name = "epostlogin" placeholder="Vänligen skriv e-mail här...">
-        </p>
-        
-        <p class = "Formulär">
-        <label for="LösenordLogin">Lösenord</label>
-        </p>
-        
-        <p>
-        <input type="password" style="-webkit-text-security: square;" id="passwordlogin" name = "passwordlogin" placeholder="Vänligen skriv lösenord här...">
-        </p>
-        
-        <p class = "Formulär"><input class ="button" id ="Login" type="submit" value="Logga in!"></p>
-        </div>
-    </form>
+<form>
+  <input placeholder="Email">
+  <input type="password" placeholder="Password">
+  <button>Login</button>
+  <p>Or register <a href="register.php">here</a>.</p>
+</form>
+
 
   
     </body>
