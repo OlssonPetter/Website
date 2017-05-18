@@ -6,10 +6,8 @@ body {
 }
 .Startsida {
     position: relative;
-    top: 150px;
     color: white;
     font-family:sans-serif;
-    text-align: center;
 }
 head {
     position: absolute;
@@ -20,14 +18,17 @@ head {
 #Först {
     font-size: 50px;
     color: white;
+    text-align: center;
 }
 #Mitten {
     font-size: 100px;
     color: white;
+    text-align: center;
 }
 #Sist {
-    font-size: 30;
+    font-size: 30px;
     color: white;
+    text-align: center;
 }
 table {
     border-collapse: collapse;
