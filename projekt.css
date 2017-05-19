@@ -183,7 +183,7 @@ input[type=submit]:hover {
 } 
 
 
-form {
+#MyLoginForm {
   margin: 0 auto;
   padding: 20px 0 0 0;
   text-align: center;
@@ -194,7 +194,7 @@ form {
 margin-top: 15%;
 }
 
-form input {
+#MyLoginForm input {
   display: block;
   background: transparent;
   margin: 0 auto;
@@ -204,11 +204,40 @@ form input {
   padding: 10px 10px 10px 5px;
 }
 
-form input:nth-child(2) {
+#MyLoginForm input:nth-child(2) {
   margin: 20px auto 0 auto;
 }
 
-form input:focus {
+#MyLoginForm input:focus {
+  border-bottom: 2px solid #4a89dc;
+}
+
+#MyRegForm {
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  text-align: center;
+  width: 380px;
+  height: 430px;
+  background: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 1px 0px, rgba(0, 0, 0, 0.09804) 0px 1px 2px 0px;
+margin-top: 5%;
+}
+
+#MyRegForm input {
+  display: block;
+  background: transparent;
+  margin: 0 auto;
+  border-style: none;
+  border-bottom: 1px solid #454545;
+  font-size: 22px;
+  padding: 10px 10px 10px 5px;
+}
+
+#MyRegForm input:nth-child(2) {
+  margin: 20px auto 0 auto;
+}
+
+#MyRegForm input:focus {
   border-bottom: 2px solid #4a89dc;
 }
 
