@@ -1,7 +1,7 @@
 <?php
 require'anslutning.php';
-$user =mysqli_real_escape_string($conn,$_POST['email']);
-   $password =mysqli_real_escape_string($conn,$_POST['password']);
+$user =mysqli_real_escape_string($conn,$_POST['email_login']);
+   $password =mysqli_real_escape_string($conn,$_POST['password_login']);
 
    $records= $con->query("SELECT * FROM User WHERE email ='$user'")
    or die("Failed to match query database");
@@ -25,10 +25,10 @@ $user =mysqli_real_escape_string($conn,$_POST['email']);
     <title>ACTIV8</title>
     </head>
     <body>
-<form name="FormLogin" id="FormLogin">
-  <input placeholder="Email" name= "email">
-  <input type="password" placeholder="Password" name="password">
-  <button>Login</button>
+<form name="FormLogin" id="FormLogin" action="login.php" method="post">
+  <input placeholder="Email" name= "email_login">
+  <input type="password" placeholder="Password" name="password_login">
+    <input id="button_login" type= "submit" value="Login">
   <p>Or register <a href="register.php">here</a>.</p>
 </form>
 
