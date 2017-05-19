@@ -17,7 +17,7 @@ if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !emp
   $password=sha1($password);
   if (preg_match('/\S+@\S+\.\S+/', $email) === 0)
   {
-    echo("Unvalid emailadress ");
+    echo"Unvalid emailadress ";
     exit();
   }
   $results=$con->query("SELECT * FROM User WHERE email ='$email'");
@@ -26,17 +26,20 @@ if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !emp
   {
     die("Username already exists");
   }
-  else {
-$sql="INSERT INTO User VALUES('','$email','$info','$password','$salt','$sex','$age','$sport')";
-if($con->query($sql)====TRUE)
+  else 
+  {
+      $sql="INSERT INTO User VALUES('','$email','$info','$password','$salt','$sex','$age','$sport')";
+  }
+if($con->query($sql)===TRUE)
 {
   echo("User created");
 }
-else {
-  echo("Error:".$sql."<br>".$con->error;)
+else 
+    {
+  echo"Error:".$sql."<br>".$con->error;
+    }
 }
-  }
-}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -55,7 +58,7 @@ else {
         <input placeholder="Enter your sex..."name="sex_register">
         <input placeholder="Enter your age..."name= "age_register">
         <input placeholder="What sport are you interested in?"name= "sport_register">
-        <input id="button_register" type= "submit" value="Register">
+        <input class="button" id="button_register" type= "submit" value="Register">
         <p>Or login <a href="login.php">here</a>.</p>
         </form>
 

@@ -5,11 +5,11 @@
     $password = "root";
     $database = "project";
  
-    $conn = new mysqli('localhost', 'root', 'root', 'project');
+    $con = new mysqli('localhost', 'root', 'root', 'project');
 
-    if ($conn->connect_error) 
+    if ($con->connect_error) 
     {
-        die("Connection failed: " . $conn->connect_error);    
+        die("Connection failed: " . $con->connect_error);    
     }
     echo"Du är ansluten din lilla jävel";
 ?>
