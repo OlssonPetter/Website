@@ -28,7 +28,7 @@ $user =mysqli_real_escape_string($con,$_POST['email_login']);
 <form name="FormLogin" id="FormLogin" action="login.php" method="post">
   <input placeholder="Email" name= "email_login">
   <input type="password" placeholder="Password" name="password_login">
-    <input class="button" id="button_login" type= "submit" value="Login">
+    <input id="button_login" type= "submit" value="Login">
   <p>Or register <a href="register.php">here</a>.</p>
 </form>
 

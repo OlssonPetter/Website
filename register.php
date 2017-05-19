@@ -58,7 +58,7 @@ else
         <input placeholder="Enter your sex..."name="sex_register">
         <input placeholder="Enter your age..."name= "age_register">
         <input placeholder="What sport are you interested in?"name= "sport_register">
-        <input class="button" id="button_register" type= "submit" value="Register">
+        <input id="button_register" type= "submit" value="Register">
         <p>Or login <a href="login.php">here</a>.</p>
         </form>
 

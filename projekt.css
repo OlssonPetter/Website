@@ -165,17 +165,17 @@ table, th, td {
     display: block;
 }
 input[type=submit] {
-        background:  transparent;
-     height:  38px;
-     line-height:  40px;
-     border:  2px solid white;
-     display:  inline-block;
-     float:  none;
-     text-align:  center;
-     width:  160px;
-     padding:  0px!important;
-     font-size:  14px;
-     color:  #fff;
+  margin: 50px 0;
+  width: 315px;
+  height: 46px;
+  text-align: center;
+  padding: 8px 0 8px 8;
+  background: #4a89dc;
+  color: #eee;
+  font-size: 22px;
+  border-style: none;
+  border-bottom: 3px solid #3160B6;
+  transition: all .2s linear;
 }
 input[type=submit]:hover {
          color:  #fff;
@@ -183,7 +183,7 @@ input[type=submit]:hover {
 } 
 
 
-#MyLoginForm {
+#FormLogin {
   margin: 0 auto;
   padding: 20px 0 0 0;
   text-align: center;
@@ -194,7 +194,7 @@ input[type=submit]:hover {
 margin-top: 15%;
 }
 
-#MyLoginForm input {
+#FormLogin input {
   display: block;
   background: transparent;
   margin: 0 auto;
@@ -204,11 +204,11 @@ margin-top: 15%;
   padding: 10px 10px 10px 5px;
 }
 
-#MyLoginForm input:nth-child(2) {
+#FormLogin input:nth-child(2) {
   margin: 20px auto 0 auto;
 }
 
-#MyLoginForm input:focus {
+#Login input:focus {
   border-bottom: 2px solid #4a89dc;
 }
 
