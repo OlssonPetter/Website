@@ -25,7 +25,7 @@ $user =mysqli_real_escape_string($conn,$_POST['email']);
     <title>ACTIV8</title>
     </head>
     <body>
-<form>
+<form name="FormLogin" id="FormLogin">
   <input placeholder="Email" name= "email">
   <input type="password" placeholder="Password" name="password">
   <button>Login</button>
