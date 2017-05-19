@@ -1,5 +1,5 @@
 body {
-    background-image:url(../Website/running.jpg);                 
+    background-image:url(../Website/running.jpg);
     background-repeat:   no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -8,6 +8,11 @@ body {
     position: relative;
     color: white;
     font-family:sans-serif;
+}
+.h1
+{
+  position: absolute;
+  text-align: center;
 }
 head {
     position: absolute;
@@ -32,7 +37,7 @@ head {
 }
 table {
     border-collapse: collapse;
-    
+
 }
 table, th, td {
    border: 2px solid white;
@@ -106,7 +111,7 @@ table, th, td {
     overflow: hidden;
     background-color: gba(255, 255, 255, 0.2);
     font-family: Arial;
-    
+
 }
 
 .container a {
@@ -116,7 +121,7 @@ table, th, td {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
+
 }
 
 .dropdown {
@@ -125,7 +130,7 @@ table, th, td {
 }
 
 .dropdown .dropbtn {
-    font-size: 16px;    
+    font-size: 16px;
     border: none;
     outline: none;
     color: white;
@@ -180,7 +185,7 @@ input[type=submit] {
 input[type=submit]:hover {
          color:  #fff;
      background:  rgba(255, 255, 255, 0.2);
-} 
+}
 
 
 #FormLogin {

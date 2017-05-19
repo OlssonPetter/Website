@@ -1,7 +1,7 @@
 <?php
 require'anslutning.php';
 $user =mysqli_real_escape_string($con,$_POST['email_login']);
-   $password =mysqli_real_escape_string($con,$_POST['password_login']);
+$password =mysqli_real_escape_string($con,$_POST['password_login']);
 
    $records= $con->query("SELECT * FROM User WHERE email ='$user'")
    or die("Failed to match query database");
