@@ -1,7 +1,18 @@
 <?php
+
+session_start();
+
+if (isset($_SESSION['user']))
+{
+  header("Location: index.php");
+}
+
 require'anslutning.php';
-$user =mysqli_real_escape_string($con,$_POST['email_login']);
-$password =mysqli_real_escape_string($con,$_POST['password_login']);
+
+if(!empty($_POST['email_login']) && !empty($_POST['password_login']))
+{
+  $user =mysqli_real_escape_string($con,$_POST['email_login']);
+  $password =mysqli_real_escape_string($con,$_POST['password_login']);
 
    $records= $con->query("SELECT * FROM User WHERE email ='$user'")
    or die("Failed to match query database");
@@ -11,12 +22,14 @@ $password =mysqli_real_escape_string($con,$_POST['password_login']);
 
    if(count($results)>0&& $password==$results['password'])
    {
-     echo("its a match");
-
+     $_SESSION['user'] = $results['email'];
+     header("Location: index.php");
    }
-   //else {
-    //die("did not find match in database");
-   //}
+   else
+   {
+     die("Password and Username did not match, please register or try again");
+   }
+ }
 
 ?>
 <!DOCTYPE html>

@@ -1,8 +1,11 @@
 <?php
-//if(isset($_SESSION['inloggad']))
-//{
-  //header location
-//}
+
+session_start();
+
+if (isset($_SESSION['user']))
+{
+  header("Location: index.php");
+}
 require 'anslutning.php';
 if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !empty($_POST['info_register'])|| !empty($_POST['sex_register'])|| !empty($_POST['age_register'])|| !empty($_POST['sport_register']))
 {
@@ -26,7 +29,7 @@ if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !emp
   {
     die("Username already exists");
   }
-  else 
+  else
   {
       $sql="INSERT INTO User VALUES('','$email','$info','$password','$salt','$sex','$age','$sport')";
   }
@@ -34,7 +37,7 @@ if($con->query($sql)===TRUE)
 {
   echo("User created");
 }
-else 
+else
     {
   echo"Error:".$sql."<br>".$con->error;
     }

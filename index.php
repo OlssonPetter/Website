@@ -1,5 +1,7 @@
 <?php
 require 'anslutning.php';
+
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -12,12 +14,29 @@ require 'anslutning.php';
     <meta charset="utf-8">
     </head>
     <body>
+
+
+      <?php if (isset($_SESSION['user'])): echo 'Welcome, '.$_SESSION['user']; ?>
+
+      <h1>Welcome, you are now logged in!</h1>
+
+
+      <a href="logout.php">Logout?</a>
+
+
+
+
+      <?php else: ?>
+
     <h1 class ="Startsida"id="Först">WELCOME TO</h1>
     <h2 class ="Startsida"id="Mitten">ACTIV8</h2>
     <h3 class ="Startstida"id="Sist">THE ACTIVE COMMUNITY.</h3>
-    
+
     <a href="login.php" class="buttonstart1" type="button" >Logga in!</a>
-    <a href="register.php" class="buttonstart2" type="button" >Registera dig!</a>  
+    <a href="register.php" class="buttonstart2" type="button" >Registera dig!</a>
+
+  <?php endif; ?>
+
         </body>
     <link rel="stylesheet" href="projekt.css"/>
     <meta charset="utf-8">
