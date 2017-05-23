@@ -58,9 +58,19 @@ else
         <input placeholder="Enter your email..."name="email_register">
         <input type="password" placeholder="Enter your password..." name="password_register">
         <input placeholder="Add som information about yourself..."name="info_register">
-        <input placeholder="Enter your sex..."name="sex_register">
+        <p> Choose gender </p>
+         <select name="sex_register">
+     <option value="male"selected="">Male</option>
+     <option value="female">Female</option>
+   </select>
         <input placeholder="Enter your age..."name= "age_register">
-        <input placeholder="What sport are you interested in?"name= "sport_register">
+       <p> What sport are you interested in? </p>
+        <select name="sport_register">
+    <option value="football">Football</option>
+    <option value="tennis">Tennis</option>
+    <option value="running" selected>Running</option>
+    <option value="gym">Gym</option>
+  </select>
         <input id="button_register" type= "submit" value="Register">
         <p>Or login <a href="login.php">here</a>.</p>
         </form>
