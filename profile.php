@@ -10,6 +10,9 @@
 </div>
     </head>
     <body>
+      <div class="header">
+          <a href="index.php">ACTIV8</a>
+      </div>
      <?php
 session_start();
 
@@ -34,8 +37,8 @@ require'anslutning.php';
       }
 
 
-?>   
-    
+?>
+
     </body>
     <meta charset="utf-8">
     <link rel="stylesheet" href="projekt.css"/>

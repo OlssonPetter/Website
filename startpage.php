@@ -13,20 +13,23 @@
       <a href="#">Create event</a>
       <a href="#">Find event</a>
     </div>
-  </div> 
+  </div>
   <a href="#Booking"></a>
 </div>
     </head>
 <body>
-    
+  <div class="header">
+      <a href="index.php">ACTIV8</a>
+  </div>
+
 <div class="opt"></div>
 <ul id="feed"></ul>
-<div 
-     style="font-size: 12px;  
-        text-align: center;  
-        color: #666;  
-        background:rgba(0,0,0,0.8);    
-        max-width: 100%; width: 100vw;   
+<div
+     style="font-size: 12px;
+        text-align: center;
+        color: #666;
+        background:rgba(0,0,0,0.8);
+        max-width: 100%; width: 100vw;
         opacity: 0.9;
         padding:5px 0;">
 </div>

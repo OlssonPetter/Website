@@ -12,6 +12,9 @@
 </div>
     </head>
     <body>
+        <div class="header">
+          <a href="index.php">ACTIV8</a>
+        </div>
         <form name="Create_Event_Form" id="Create_Event_Form" action="event.php"method="post">
         <input placeholder="Enter event name..." name="event_name">
         <input placeholder="Enter event information..."name="event_info">
@@ -25,7 +28,7 @@
         </select>
         <input id="create_event" type= "submit" value="Create event!">
         </form>
-    
+
     </body>
     <link rel="stylesheet" href="projekt.css"/>
     <meta charset="utf-8">

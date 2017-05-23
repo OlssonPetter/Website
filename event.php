@@ -10,7 +10,7 @@ require'anslutning.php';
     if(!empty($_POST['event_name'])|| !empty($_POST['event_info'])|| !empty($_POST['event_location']))
     {
         $sql="INSERT INTO Event VALUES('','$event_name','$event_info','$event_location')";
-        
+
     }
 
 ?>
@@ -26,15 +26,18 @@ require'anslutning.php';
 </div>
     </head>
 <body>
+  <div class="header">
+      <a href="index.php">ACTIV8</a>
+  </div>
     <a href="create_event.php" class="button" type="button" >+</a>
 <div class="opt"></div>
 <ul id="feed"></ul>
-<div 
-     style="font-size: 12px;  
-        text-align: center;  
-        color: #666;  
-        background:rgba(0,0,0,0.8);    
-        max-width: 100%; width: 100vw;   
+<div
+     style="font-size: 12px;
+        text-align: center;
+        color: #666;
+        background:rgba(0,0,0,0.8);
+        max-width: 100%; width: 100vw;
         opacity: 0.9;
         padding:5px 0;">
 </div>

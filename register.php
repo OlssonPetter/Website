@@ -50,6 +50,9 @@ else
     <title>ACTIV8</title>
     </head>
     <body>
+      <div class="header">
+          <a href="index.php">ACTIV8</a>
+      </div>
 
 
       <h1>Register below</h1>

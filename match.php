@@ -20,6 +20,9 @@ if(!isset($_SESSION['user']))
 </div>
   </head>
   <body>
+    <div class="header">
+        <a href="index.php">ACTIV8</a>
+    </div>
 
     <h1>Find a match and start improving your life!</h1>
 

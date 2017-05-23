@@ -10,8 +10,8 @@ session_start();
 <head>
     <title>ACTIV8</title>
     <div class="container">
-  <h1><a href="#home">About</a></h1>
-</div>
+      <h1><a href="#home">About</a></h1>
+    </div>
     <meta charset="utf-8">
     </head>
     <body>
@@ -19,7 +19,9 @@ session_start();
 
       <?php if (isset($_SESSION['user'])): echo 'Welcome, '.$_SESSION['user']; ?>
 
-
+        <div class="header">
+            <a href="index.php">ACTIV8</a>
+        </div>
 <div class="container">
   <a href="profile.php">Profile</a>
   <a href="friends.php">Friends</a>
@@ -39,7 +41,9 @@ session_start();
 
 
       <?php else: ?>
-
+        <div class="header">
+            <a href="index.php">ACTIV8</a>
+        </div>
     <h1 class ="Startsida"id="Först">WELCOME TO</h1>
     <h2 class ="Startsida"id="Mitten">ACTIV8</h2>
     <h3 class ="Startstida"id="Sist">THE ACTIVE COMMUNITY.</h3>
