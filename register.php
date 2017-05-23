@@ -58,7 +58,7 @@ else
         <input placeholder="Enter your email..."name="email_register">
         <input type="password" placeholder="Enter your password..." name="password_register">
         <input placeholder="Add som information about yourself..."name="info_register">
-        <p> Enter your sex </p>
+        <p> Choose gender </p>
          <select name="sex_register">
      <option value="male"selected="">Male</option>
      <option value="female">Female</option>
