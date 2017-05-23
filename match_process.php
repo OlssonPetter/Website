@@ -2,6 +2,12 @@
 <html>
   <head>
     <title>ACTIV8</title>
+<div class="container">
+  <a href="profile.php">Profile</a>
+  <a href="friends.php">Friends</a>
+<a href="event.php">Events</a>
+  <a href="booking.php">Booking</a>
+</div>
   </head>
   <body>
 

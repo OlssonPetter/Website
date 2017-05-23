@@ -18,17 +18,11 @@ require'anslutning.php';
 <!DOCTYPE html>
 <html>
     <head>
-    <div class="container">
-  <a href="#home">Profile</a>
-  <a href="#news">Friends</a>
-  <div class="dropdown">
-    <button class="dropbtn">Events</button>
-    <div class="dropdown-content">
-      <a href="#">Create event</a>
-      <a href="#">Find event</a>
-    </div>
-  </div> 
-  <a href="#Booking"></a>
+<div class="container">
+  <a href="profile.php">Profile</a>
+  <a href="friends.php">Friends</a>
+<a href="event.php">Events</a>
+  <a href="booking.php">Booking</a>
 </div>
     </head>
 <body>

@@ -20,13 +20,18 @@ session_start();
       <?php if (isset($_SESSION['user'])): echo 'Welcome, '.$_SESSION['user']; ?>
 
 
-
+<div class="container">
+  <a href="profile.php">Profile</a>
+  <a href="friends.php">Friends</a>
+<a href="event.php">Events</a>
+  <a href="booking.php">Booking</a>
+</div>
       <h1>Welcome, you are now logged in!</h1>
 
 
       <a href="logout.php">Logout?</a
 
-      <h2>Find matches!</h1>
+      <h1>Find matches!</h1>
 
       <a href="match.php">Lets go!</a>
 
