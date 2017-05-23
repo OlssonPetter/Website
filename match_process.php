@@ -22,11 +22,7 @@
     require 'anslutning.php';
 
     session_start();
-
-
-    //$records = $con->query("SELECT * FROM User WHERE user_id = '$_SESSION['user']'")
-    //or die("Failed to find the current user, could therefor not even begin to find a match.");
-    //$results=$records->fetch_assoc();
+      
     $currentuser = $_SESSION['usersport'];
     var_dump($_SESSION['usersport']);
     echo "$currentuser";

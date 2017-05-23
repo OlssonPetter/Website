@@ -6,12 +6,39 @@ require'anslutning.php';
     $event_name =mysqli_real_escape_string($con,$_POST['event_name']);
     $event_info =mysqli_real_escape_string($con,$_POST['event_info']);
     $event_location =mysqli_real_escape_string($con,$_POST['event_location']);
+    $event_sport = mysqli_real_escape_string($con,$_POST['event_sport']);
+    $event_creator = $_SESSION['email'];
 
-    if(!empty($_POST['event_name'])|| !empty($_POST['event_info'])|| !empty($_POST['event_location']))
+    if(!empty($_POST['event_name'])|| !empty($_POST['event_info'])|| !empty($_POST['event_location'])|| !empty($_POST['event_sport'])|| !empty($_POST['event_creator']))
     {
-        $sql="INSERT INTO Event VALUES('','$event_name','$event_info','$event_location')";
+        $sql= "INSERT INTO Event 
+        VALUES('','$event_name','$event_info','$event_location','$event_sport', '$event_creator')";
+        
+        if($con->query($sql)===TRUE)
+            {
+                echo("Event created");
+            }
+        else
+            {
+                echo"Error:".$sql."<br>".$con->error;
+            }
 
     }
+
+       $matches = $con->query("SELECT * FROM Event")
+            or die("query failed");
+
+
+
+    if ($matches != 0)
+      {
+        echo "<table><tr><th>Event name</th><th>Information</th><th>Location</th><th>Sport</th><th>Host</th></tr>";
+        while ($matchArray = $matches->fetch_assoc())
+          {
+            echo "<tr><td>" .$matchArray['event_name']. "</td><td>" .$matchArray['event_info']. "</td><td>" .$matchArray['event_location']. "</td><td>" .$matchArray['event_sport']. "</td><td>" .$matchArray['event_creator']. "</td></tr>";
+          }
+          echo "</table>";
+      }
 
 ?>
 
@@ -30,17 +57,6 @@ require'anslutning.php';
       <a href="index.php">ACTIV8</a>
   </div>
     <a href="create_event.php" class="button" type="button" >+</a>
-<div class="opt"></div>
-<ul id="feed"></ul>
-<div
-     style="font-size: 12px;
-        text-align: center;
-        color: #666;
-        background:rgba(0,0,0,0.8);
-        max-width: 100%; width: 100vw;
-        opacity: 0.9;
-        padding:5px 0;">
-</div>
 </body>
     <link rel="stylesheet" href="projekt.css"/>
     <meta charset="utf-8">

@@ -23,6 +23,7 @@ if(!empty($_POST['email_login']) && !empty($_POST['password_login']))
    if(count($results)>0&& $password==$results['password'])
    {
      $_SESSION['user'] = $results['user_id'];
+    $_SESSION['email'] = $results['email'];
      $_SESSION['usersport'] = $results['sports'];
      header("Location: index.php");
    }
