@@ -1,6 +1,18 @@
 <?php
 session_start();
 
+require'anslutning.php';
+
+    $event_name =mysqli_real_escape_string($con,$_POST['event_name']);
+    $event_info =mysqli_real_escape_string($con,$_POST['event_info']);
+    $event_location =mysqli_real_escape_string($con,$_POST['event_location']);
+
+    if(!empty($_POST['event_name'])|| !empty($_POST['event_info'])|| !empty($_POST['event_location']))
+    {
+        $sql="INSERT INTO Event VALUES('','$event_name','$event_info','$event_location')";
+        
+    }
+
 ?>
 
 <!DOCTYPE html>
