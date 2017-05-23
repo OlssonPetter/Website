@@ -1,4 +1,5 @@
 <?php
+
 require 'anslutning.php';
 
 session_start();
@@ -18,10 +19,16 @@ session_start();
 
       <?php if (isset($_SESSION['user'])): echo 'Welcome, '.$_SESSION['user']; ?>
 
+
+
       <h1>Welcome, you are now logged in!</h1>
 
 
-      <a href="logout.php">Logout?</a>
+      <a href="logout.php">Logout?</a
+
+      <h2>Find matches!</h1>
+
+      <a href="match.php">Lets go!</a>
 
 
 
