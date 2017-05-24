@@ -43,10 +43,8 @@ if(!empty($_POST['email_edit'])|| !empty($_POST['password_edit'])|| !empty($_POS
   }
   else
   {
-      
-    //UPDATE User
-    //SET email='$email', user_info='$info', password='$password', salt='$salt', sex='$sex', age='$age', sports='$sport'
-    //WHERE user_id = $_SESSION['user'];
+    $edit_profile = $_SESSION['user'];
+    $sql= "UPDATE User SET email='$email', user_info='$info', password='$password', salt='$salt', sex='$sex', age='$age', sports='$sport' WHERE user_id = $edit_profile";
   }
 if($con->query($sql)===TRUE)
     {

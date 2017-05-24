@@ -30,13 +30,15 @@
     or die("query failed");
 
 
-
+?>
+      <form action="profile.php" method="post" name="to_profile"></form>
+<?php
     if ($matches != 0)
       {
         echo "<table><tr><th>Email</th><th>Age</th></tr>";
         while ($matchArray = $matches->fetch_assoc())
           {
-            echo "<tr><td onclick="content()">" .$matchArray['email']. "</td><td>" .$matchArray['age']. "</td></tr>";
+            echo "<tr><td>" .$matchArray['email']. "</td><td>" .$matchArray['age']. "</td></tr>";
           }
           echo "</table>";
       }
