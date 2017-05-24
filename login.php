@@ -56,7 +56,7 @@ if(!empty($_POST['email_login']) && !empty($_POST['password_login']))
 <form name="FormLogin" id="FormLogin" action="login.php" method="post">
   <input placeholder="Email" name= "email_login">
   <input type="password" placeholder="Password" name="password_login">
-    <input id="button_login" type= "submit" value="Login">
+    <input class="button"type= "submit" value="Login">
   <p>Or register <a href="register.php">here</a>.</p>
 </form>
 

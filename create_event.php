@@ -26,7 +26,7 @@
         <option value="tennis">Tennis</option>
         <option value="gym">Gym</option>
         </select>
-        <input id="create_event" type= "submit" value="Create event!">
+        <input class="button" id="create_event" type= "submit" value="Create event!">
         </form>
 
     </body>

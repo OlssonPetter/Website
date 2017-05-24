@@ -48,8 +48,8 @@ session_start();
     <h2 class ="Startsida"id="Mitten">ACTIV8</h2>
     <h3 class ="Startstida"id="Sist">THE ACTIVE COMMUNITY.</h3>
 
-    <a href="login.php" class="buttonstart1" type="button" >Logga in!</a>
-    <a href="register.php" class="buttonstart2" type="button" >Registera dig!</a>
+    <a href="login.php" class="button" type="button" >Logga in!</a>
+    <a href="register.php" class="button" type="button" >Registera dig!</a>
 
   <?php endif; ?>
 

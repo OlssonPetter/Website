@@ -170,23 +170,6 @@ table, th, td {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-input[type=submit] {
-  margin: 50px 0;
-  width: 315px;
-  height: 46px;
-  text-align: center;
-  padding: 8px 0 8px 8;
-  background: #4a89dc;
-  color: #eee;
-  font-size: 22px;
-  border-style: none;
-  border-bottom: 3px solid #3160B6;
-  transition: all .2s linear;
-}
-input[type=submit]:hover {
-         color:  #fff;
-     background:  rgba(255, 255, 255, 0.2);
-}
 
 
 #FormLogin {
@@ -206,8 +189,8 @@ margin-top: 15%;
   margin: 0 auto;
   border-style: none;
   border-bottom: 1px solid #454545;
-  font-size: 22px;
-  padding: 10px 10px 10px 5px;
+  font-size: 15px;
+  padding: 20px 20px 20px 5px;
 }
 
 #FormLogin input:nth-child(2) {

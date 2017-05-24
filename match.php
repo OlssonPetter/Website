@@ -27,7 +27,7 @@ if(!isset($_SESSION['user']))
     <h1>Find a match and start improving your life!</h1>
 
     <form name="FormMatch" id="FormMatch" action="match_process.php" method="post">
-      <input type="submit" id="button_match" value="Match">
+      <input type="submit" id="button_match" value="Match" class="button">
     </form>
 
 
