@@ -278,4 +278,9 @@ footer {
   margin: 170px 0 0 0;
   text-align: center;
 }
-
+.booking {
+    border-style: inset;
+    border-width: medium;
+    color: white;
+    
+}
