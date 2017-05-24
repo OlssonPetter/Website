@@ -25,6 +25,7 @@ session_start();
 <a href="event.php">Events</a>
   <a href="booking.php">Booking</a>
     <a href="index.php">Homepage</a>
+    <a href="match.php">Find friends</a>
 </div>
       <h1>Welcome, you are now logged in!</h1>
 
