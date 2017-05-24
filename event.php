@@ -50,12 +50,11 @@ require'anslutning.php';
   <a href="friends.php">Friends</a>
 <a href="event.php">Events</a>
   <a href="booking.php">Booking</a>
+    <a href="index.php">Homepage</a>
 </div>
     </head>
 <body>
-  <div class="header">
-      <a href="index.php">ACTIV8</a>
-  </div>
+ 
     <a href="create_event.php" class="button" type="button" >+</a>
 </body>
     <link rel="stylesheet" href="projekt.css"/>

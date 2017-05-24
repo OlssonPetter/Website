@@ -9,24 +9,22 @@
   <a href="friends.php">Friends</a>
 <a href="event.php">Events</a>
   <a href="booking.php">Booking</a>
+     <a href="index.php">Homepage</a>
 </div>
     </head>
     <body>
-        <div class="header">
-          <a href="index.php">ACTIV8</a>
-        </div>
         <form name="Create_Event_Form" id="Create_Event_Form" action="event.php"method="post">
-        <input placeholder="Enter event name..." name="event_name">
-        <input placeholder="Enter event information..."name="event_info">
-        <input placeholder="Enter event location..."name="event_location">
+        <p></p><input placeholder="Enter event name..." name="event_name"></p>
+        <p><input placeholder="Enter event information..."name="event_info"></p>
+        <p><input placeholder="Enter event location..."name="event_location"></p>
         <p>Choose event sport</p>
         <select name="event_sport">
-         <option value="running" selected>Running</option>
+        <option value="running" selected>Running</option>
         <option value="football">Football</option>
         <option value="tennis">Tennis</option>
         <option value="gym">Gym</option>
         </select>
-        <input class="button" id="create_event" type= "submit" value="Create event!">
+        <p><input class="button" id="create_event" type= "submit" value="Create event!"></p>
         </form>
 
     </body>

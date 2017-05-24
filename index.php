@@ -19,23 +19,21 @@ session_start();
 
       <?php if (isset($_SESSION['user'])): echo 'Welcome, '.$_SESSION['user']; ?>
 
-        <div class="header">
-            <a href="index.php">ACTIV8</a>
-        </div>
 <div class="container">
   <a href="profile.php">Profile</a>
   <a href="friends.php">Friends</a>
 <a href="event.php">Events</a>
   <a href="booking.php">Booking</a>
+    <a href="index.php">Homepage</a>
 </div>
       <h1>Welcome, you are now logged in!</h1>
 
 
-      <a href="logout.php">Logout?</a
+      <p><a class="button" href="logout.php">Logout?</a
 
       <h1>Find matches!</h1>
 
-      <a href="match.php">Lets go!</a>
+      <a class="button"href="match.php">Lets go!</a></p>
 
 
 

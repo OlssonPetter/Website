@@ -3,9 +3,7 @@
 <head>
   <title>ACTIV8</title>
   <meta charset="utf-8">
-        <div class="header">
-            <a href="index.php">ACTIV8</a>
-        </div>
+
 </head>
   <body>
     <h1> Terms and conditions</h1>

@@ -7,14 +7,10 @@
   <a href="friends.php">Friends</a>
 <a href="event.php">Events</a>
   <a href="booking.php">Booking</a>
+    <a href="index.php">Homepage</a>
 </div>
   </head>
   <body>
-
-    <div class="header">
-        <a href="index.php">ACTIV8</a>
-    </div>
-
     <h1>Here are your matches!</h1>
 
     <?php

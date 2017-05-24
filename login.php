@@ -50,13 +50,10 @@ if(!empty($_POST['email_login']) && !empty($_POST['password_login']))
     <title>ACTIV8</title>
     </head>
     <body>
-      <div class="header">
-          <a href="index.php">ACTIV8</a>
-      </div>
 <form name="FormLogin" id="FormLogin" action="login.php" method="post">
-  <input placeholder="Email" name= "email_login">
-  <input type="password" placeholder="Password" name="password_login">
-    <input class="button"type= "submit" value="Login">
+  <p><input placeholder="Email" name= "email_login"></p>
+  <p><input type="password" placeholder="Password" name="password_login"></p>
+    <p><input class="button"type= "submit" value="Login"></p>
   <p>Or register <a href="register.php">here</a>.</p>
 </form>
 
