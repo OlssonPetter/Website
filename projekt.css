@@ -34,6 +34,7 @@ table {
     margin-top: 5%;
 }
 
+
 th, td {
     padding: 8px;
     text-align: left;
@@ -67,6 +68,9 @@ tr:hover{
     padding: 14px 16px;
     text-decoration: none;
  
+}
+form {
+    margin-top: 10%;
 }
 
 
