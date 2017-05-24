@@ -31,7 +31,7 @@ if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !emp
   }
   else
   {
-      $sql="INSERT INTO User VALUES('','$email','$info','$password','$salt','$sex','$age','$sport')";
+      $sql="INSERT INTO User VALUES('','$email','$info','$password','$salt','$sex','$age','$sport','')";
   }
 if($con->query($sql)===TRUE)
 {
