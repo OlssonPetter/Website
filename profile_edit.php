@@ -35,5 +35,8 @@
         </form>
         </div>
     </body>
-<link rel="stylesheet" href="projekt.css"/>
+    <link rel="stylesheet" href="projekt.css"/>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="projekt.js" ></script>
 </html>

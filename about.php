@@ -23,6 +23,8 @@
 <p>Kund och annonsör får inte dela information med religiösa eller politiska med tanke att influera andra.</p>
 <p>E-tjänsten är en politiskt och religiöst obunden plattform.</p>
   </body>
-  <link rel="stylesheet" href="projekt.css"/>
-  <meta charset="utf-8">
+      <link rel="stylesheet" href="projekt.css"/>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="projekt.js" ></script>
 </html>
