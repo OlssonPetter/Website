@@ -8,6 +8,7 @@
         
         
     ?>
+        <div class="booking">
         <form name="MyRegForm" id="MyRegForm" action="profile.php"method="post">
         <input type="password" placeholder="Enter your new password..." name="password_edit">
         <input placeholder="Add som information about yourself..."name="info_edit">
@@ -24,9 +25,15 @@
         <option value="running" selected>Running</option>
         <option value="gym">Gym</option>
         </select>
-        <input id="button_register" type= "submit" value="Save changes!">
-        
+        <input id="button_register" type= "submit" value="Save changes!">        
         </form>
+        </div>
+        <div class="booking">
+            <form name="picture_edit" id="picture_edit" action="profile.php">
+            <input type="file" name="pic" accept="image">
+            <input type="submit" class="button">     
+        </form>
+        </div>
     </body>
 <link rel="stylesheet" href="projekt.css"/>
 </html>
