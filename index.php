@@ -10,7 +10,7 @@ session_start();
 <head>
     <title>ACTIV8</title>
     <div class="container">
-      <h1><a href="#home">About</a></h1>
+      <h1><a href="about.php">About</a></h1>
     </div>
     <meta charset="utf-8">
     </head>
