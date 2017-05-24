@@ -44,8 +44,8 @@ session_start();
         <div class="header">
             <a href="index.php">ACTIV8</a>
         </div>
-    <h1 class ="Startsida"id="Först">WELCOME TO</h1>
-    <h2 class ="Startsida"id="Mitten">ACTIV8</h2>
+    <h2 class ="Startsida"id="Först">WELCOME TO</h2>
+    <h1 class ="Startsida"id="Mitten">ACTIV8</h1>
     <h3 class ="Startstida"id="Sist">THE ACTIVE COMMUNITY.</h3>
 
     <a href="login.php" class="button" type="button" >Logga in!</a>
