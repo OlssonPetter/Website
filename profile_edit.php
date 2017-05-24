@@ -9,15 +9,14 @@
         
     ?>
         <form name="MyRegForm" id="MyRegForm" action="profile.php"method="post">
-        <input placeholder="Enter your email..."name="email_edit">
-        <input type="password" placeholder="Enter your password..." name="password_edit">
+        <input type="password" placeholder="Enter your new password..." name="password_edit">
         <input placeholder="Add som information about yourself..."name="info_edit">
         <p> Choose gender </p>
          <select name="sex_edit">
      <option value="male"selected="">Male</option>
      <option value="female">Female</option>
    </select>
-        <input placeholder="Enter your age..."name= "age_edi">
+        <input placeholder="Enter your age..."name= "age_edit">
        <p> What sport are you interested in? </p>
         <select name="sport_edit">
         <option value="football">Football</option>
