@@ -29,7 +29,7 @@
 
 
 ?>
-      <form action="profile.php" method="post" name="to_profile"></form>
+      <form action="profile.php" method="post" name="to_profile">
 <?php
     if ($matches != 0)
       {
@@ -40,9 +40,10 @@
           }
           echo "</table>";
       }
+        
 
     ?>
-
+ </form>
   </body>
      <link rel="stylesheet" href="projekt.css"/>
     <meta charset="utf-8">
