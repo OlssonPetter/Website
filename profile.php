@@ -17,7 +17,7 @@
 session_start();
 
 require'anslutning.php';
-        
+
 if(!empty($_POST['password_edit'])|| !empty($_POST['info_edit'])|| !empty($_POST['sex_edit'])|| !empty($_POST['age_edit'])|| !empty($_POST['sport_edit']))
 {
   $password=mysqli_real_escape_string($con,$_POST['password_edit']);

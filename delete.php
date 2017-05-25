@@ -13,24 +13,23 @@
   </head>
   <body>
     <h1>Welcome Admin!</h1>
+    <h2>Here you can search for and delete users:<h2>
+
+    <form  method="post" action="delete_search.php"  id="searchform">
+        <input  type="text" name="name">
+        <input  type="submit" name="submit" value="Search">
+    </form>
 
     <div class="container">
-      <a href="profile.php">Profile</a>
-      <a href="friends.php">Friends</a>
-    <a href="event.php">Events</a>
-      <a href="booking.php">Booking</a>
+        <a href="profile.php">Profile</a>
+        <a href="friends.php">Friends</a>
+        <a href="event.php">Events</a>
+        <a href="booking.php">Booking</a>
         <a href="index.php">Homepage</a>
         <a href="match.php">Find friends</a>
         <a href="delete.php">Delete user</a>
     </div>
-          <h1>Welcome, you are now logged in!</h1>
 
-
-          <p><a class="button" href="logout.php">Logout?</a
-
-          <h1>Find matches!</h1>
-
-          <a class="button"href="match.php">Lets go!</a></p>
 
   </body>
   <link rel="stylesheet" href="projekt.css"/>
