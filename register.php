@@ -76,7 +76,7 @@ else
     <option value="running" selected>Running</option>
     <option value="gym">Gym</option>
         </select>
-          <p>I accepts Activ8's terms and conditions<input type="checkbox" name="checkbox" id="checkbox"></p>
+          <p>I accepts Activ8's <a href="about.php">terms and conditions</a><input type="checkbox" name="checkbox" id="checkbox"></p>
         <p><input class ="button"id="button_register" type= "submit" value="Register"></p>
             <p><a href="login.php" class="button">here</a>.</p>
         </form>
