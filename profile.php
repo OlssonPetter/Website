@@ -72,16 +72,17 @@ else
         //echo "<table><tr><th>Email</th><th>User information</th><th>Gender</th><th>Age</th><th>Sport</th></tr>";
         while ($matchArray = $matches->fetch_assoc())
           {
-        echo "<div align=\"center\">";
-        echo "<br />Your profile<br />";
+        
+        echo "<div class=\"profile\" align=\"center\">";
+        //echo "<br />Your profile<br />";
         echo "<b>Email:</b> ". $matchArray['email'];
         echo "<br /><b>User information:</b> ".$matchArray['user_info'];
         echo "<br /><b>Gender:</b> ".$matchArray['sex'];
         echo "<br /><b>Age:</b> ".$matchArray['age'];
-        echo "<br /><b>Sports:</b> ".$matchArray['sports'];
+        echo "<br /><b>Sport:</b> ".$matchArray['sports'];
         echo "</div>";
      
-              
+    
             //echo "<tr><td>" .$matchArray['email']. "</td><td>" .$matchArray['user_info']. "</td><td>" .$matchArray['sex']. "</td><td>" .$matchArray['age']. "</td><td>" .$matchArray['sports']. "</td></tr>";
           }
           //echo "</table>";
