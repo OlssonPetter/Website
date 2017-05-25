@@ -19,11 +19,9 @@ body {
      padding:  0px!important;
      font-size:  14px;
      color:  #fff;
-    position: absolute;
-    left: 450px;
-    top: 370px;
+
  }
- 
+
 .button:hover  {
      color:  #fff;
      background:  rgba(255, 255, 255, 0.2);
@@ -57,9 +55,9 @@ tr:hover{
     overflow: hidden;
     background-color: gba(255, 255, 255, 0.2);
     font-family: Arial;
- 
+
 }
- 
+
 .container a {
     float: left;
     font-size: 16px;
@@ -67,11 +65,8 @@ tr:hover{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
- 
+
 }
 form {
     margin-top: 10%;
 }
-
-
-

@@ -21,6 +21,6 @@
     echo "Error deleting record: " . mysqli_error($conn);
     }
 
-    //header('Location: delete.php');
+    header('Location: delete.php');
 
 ?>

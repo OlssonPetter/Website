@@ -7,7 +7,7 @@
       header('Location: index.php');
     }
 
-    $sql = "DELETE FROM User WHERE user_id=19";
+    
 
 ?>
 
