@@ -11,9 +11,9 @@ require'anslutning.php';
 
     if(!empty($_POST['event_name'])|| !empty($_POST['event_info'])|| !empty($_POST['event_location'])|| !empty($_POST['event_sport'])|| !empty($_POST['event_creator']))
     {
-        $sql= "INSERT INTO Event 
+        $sql= "INSERT INTO Event
         VALUES('','$event_name','$event_info','$event_location','$event_sport', '$event_creator')";
-        
+
         if($con->query($sql)===TRUE)
             {
                 echo("Event created");
@@ -45,18 +45,18 @@ require'anslutning.php';
 <!DOCTYPE html>
 <html>
     <head>
-<div class="container">
-<a href="about.php">About</a>
-  <a href="profile.php">Profile</a>
-  <a href="friends.php">Friends</a>
-<a href="event.php">Events</a>
-  <a href="booking.php">Booking</a>
-    <a href="index.php">Homepage</a>
-    <a href="match.php">Find friends</a>
-</div>
+      <div class="container">
+          <a href="index.php">Homepage</a>
+          <a href="profile.php">Profile</a>
+          <a href="event.php">Events</a>
+          <a href="booking.php">Booking</a>
+          <a href="about.php">About</a>
+          <a href="friends.php">Friends</a>
+          <a href="match.php">Find friends</a>
+      </div>
     </head>
 <body>
- 
+
     <a href="create_event.php" class="button" type="button" >+</a>
 </body>
     <link rel="stylesheet" href="projekt.css"/>

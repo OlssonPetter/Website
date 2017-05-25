@@ -2,15 +2,15 @@
 <html>
   <head>
     <title>ACTIV8</title>
-<div class="container">
-<a href="about.php">About</a>
-  <a href="profile.php">Profile</a>
-  <a href="friends.php">Friends</a>
-<a href="event.php">Events</a>
-  <a href="booking.php">Booking</a>
-    <a href="index.php">Homepage</a>
-    <a href="match.php">Find friends</a>
-</div>
+    <div class="container">
+        <a href="index.php">Homepage</a>
+        <a href="profile.php">Profile</a>
+        <a href="event.php">Events</a>
+        <a href="booking.php">Booking</a>
+        <a href="about.php">About</a>
+        <a href="friends.php">Friends</a>
+        <a href="match.php">Find friends</a>
+    </div>
   </head>
   <body>
     <h1>Here are your matches!</h1>
@@ -20,11 +20,12 @@
     require 'anslutning.php';
 
     session_start();
-      
-    $currentuser = $_SESSION['usersport'];
+
+    $currentUserSport = $_SESSION['usersport'];
+    $currentUser = $_SESSION['user'];
     var_dump($_SESSION['usersport']);
     echo "$currentuser";
-    $matches = $con->query("SELECT * FROM User WHERE sports = '$currentuser'")
+    $matches = $con->query("SELECT * FROM User WHERE sports = '$currentUserSport' AND user_id <> $currentUser")
     or die("query failed");
 
 
@@ -40,7 +41,7 @@
           }
           echo "</table>";
       }
-        
+
 
     ?>
  </form>

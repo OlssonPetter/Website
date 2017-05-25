@@ -48,6 +48,10 @@ else
 <html>
     <head>
     <title>ACTIV8</title>
+    <div class="container">
+        <a href="index.php">Homepage</a>
+        <a href="about.php">About</a>
+    </div>
     </head>
     <body>
 
@@ -72,7 +76,7 @@ else
     <option value="running" selected>Running</option>
     <option value="gym">Gym</option>
         </select>
-        <p><input class ="button"id="button_register" type= "submit" value="Register"></p> 
+        <p><input class ="button"id="button_register" type= "submit" value="Register"></p>
             <p><a href="login.php" class="button">here</a>.</p>
         </form>
 

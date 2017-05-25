@@ -9,9 +9,6 @@ session_start();
 <html>
 <head>
     <title>ACTIV8</title>
-    <div class="container">
-      <h1><a href="about.php">About</a></h1>
-    </div>
     <meta charset="utf-8">
     </head>
     <body>
@@ -19,14 +16,15 @@ session_start();
 
       <?php if (isset($_SESSION['user'])): echo 'Welcome, '.$_SESSION['user']; ?>
 
-<div class="container">
-    <a href="profile.php">Profile</a>
-    <a href="friends.php">Friends</a>
-    <a href="event.php">Events</a>
-    <a href="booking.php">Booking</a>
-    <a href="index.php">Homepage</a>
-    <a href="match.php">Find friends</a>
-</div>
+        <div class="container">
+            <a href="index.php">Homepage</a>
+            <a href="profile.php">Profile</a>
+            <a href="event.php">Events</a>
+            <a href="booking.php">Booking</a>
+            <a href="about.php">About</a>
+            <a href="friends.php">Friends</a>
+            <a href="match.php">Find friends</a>
+        </div>
       <h1>Welcome, you are now logged in!</h1>
 
 
@@ -40,15 +38,16 @@ session_start();
 
 
       <?php else: ?>
-        <div class="header">
-            <a href="index.php">ACTIV8</a>
+        <div class="container">
+            <a href="index.php">Homepage</a>
+            <a href="about.php">About</a>
         </div>
     <h2 class ="Startsida"id="Först">WELCOME TO</h2>
     <h1 class ="Startsida"id="Mitten">ACTIV8</h1>
     <h3 class ="Startstida"id="Sist">THE ACTIVE COMMUNITY.</h3>
 
-    <a href="login.php" class="button" type="button" >Logga in!</a>
-    <a href="register.php" class="button" type="button" >Registera dig!</a>
+    <a href="login.php" class="button" type="button" >Login!</a>
+    <a href="register.php" class="button" type="button" >Register!</a>
 
   <?php endif; ?>
 
