@@ -50,7 +50,7 @@ if(!empty($_POST['email_login']) && !empty($_POST['password_login']))
     <title>ACTIV8</title>
     <div class="container">
         <a href="index.php">Homepage</a>
-        <a href="about.php">About</a>
+        <a href="about.php">Terms</a>
     </div>
     </head>
     <body>
@@ -58,7 +58,7 @@ if(!empty($_POST['email_login']) && !empty($_POST['password_login']))
   <p><input placeholder="Email" name= "email_login"></p>
   <p><input type="password" placeholder="Password" name="password_login"></p>
     <p><input class="button"type= "submit" value="Login"></p>
-  <p>Or register <a href="register.php">here</a>.</p>
+  <p><a href="register.php" class="button">Register here</a>.</p>
 </form>
 
 

@@ -17,22 +17,20 @@ session_start();
       <?php if (isset($_SESSION['user'])): echo 'Welcome, '.$_SESSION['user']; ?>
 
         <div class="container">
+            <a href="logout.php">Logout?</a>
             <a href="index.php">Homepage</a>
             <a href="profile.php">Profile</a>
             <a href="event.php">Events</a>
             <a href="booking.php">Booking</a>
-            <a href="about.php">About</a>
+            <a href="about.php">Terms</a>
             <a href="friends.php">Friends</a>
             <a href="match.php">Find friends</a>
         </div>
       <h1>Welcome, you are now logged in!</h1>
-
-
-      <p><a class="button" href="logout.php">Logout?</a
-
-      <h1>Find matches!</h1>
-
-      <a class="button"href="match.php">Lets go!</a></p>
+        
+    <form name="FormMatch" id="FormMatch" action="match_process.php" method="post">
+      <input type="submit" id="button_match" value="Find training partners!" class="button">
+    </form>
 
 
 
@@ -40,7 +38,7 @@ session_start();
       <?php else: ?>
         <div class="container">
             <a href="index.php">Homepage</a>
-            <a href="about.php">About</a>
+            <a href="about.php">Terms</a>
         </div>
     <h2 class ="Startsida"id="Först">WELCOME TO</h2>
     <h1 class ="Startsida"id="Mitten">ACTIV8</h1>

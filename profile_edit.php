@@ -13,11 +13,12 @@ if(!isset($_SESSION['user']))
 <html>
     <head>
       <div class="container">
+          <a href="logout.php">Logout?</a>
           <a href="index.php">Homepage</a>
           <a href="profile.php">Profile</a>
           <a href="event.php">Events</a>
           <a href="booking.php">Booking</a>
-          <a href="about.php">About</a>
+          <a href="about.php">Terms</a>
           <a href="friends.php">Friends</a>
           <a href="match.php">Find friends</a>
       </div>

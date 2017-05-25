@@ -50,7 +50,7 @@ else
     <title>ACTIV8</title>
     <div class="container">
         <a href="index.php">Homepage</a>
-        <a href="about.php">About</a>
+        <a href="about.php">Terms</a>
     </div>
     </head>
     <body>

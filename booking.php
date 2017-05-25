@@ -11,6 +11,7 @@ if(!isset($_SESSION['user']))
     <head>
     <title>ACTIV8</title>
     <div class="container">
+        <a href="logout.php">Logout?</a>
         <a href="index.php">Homepage</a>
         <a href="profile.php">Profile</a>
         <a href="event.php">Events</a>
