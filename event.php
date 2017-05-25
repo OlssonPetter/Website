@@ -1,6 +1,16 @@
 <?php
 session_start();
 
+
+
+
+
+if(!isset($_SESSION['user']))
+{
+  header("Location:index.php");
+}
+
+
 require'anslutning.php';
 
     $event_name =mysqli_real_escape_string($con,$_POST['event_name']);
