@@ -65,16 +65,27 @@ else
     var_dump($_SESSION['user']);
     echo "$currentuser";
     $matches = $con->query("SELECT * FROM User WHERE user_id = '$currentuser'")
-    or die("query failed");
+        or die("query failed");
 
     if ($matches != 0)
       {
-        echo "<table><tr><th>Email</th><th>User information</th><th>Gender</th><th>Age</th><th>Sport</th></tr>";
+        //echo "<table><tr><th>Email</th><th>User information</th><th>Gender</th><th>Age</th><th>Sport</th></tr>";
         while ($matchArray = $matches->fetch_assoc())
           {
-            echo "<tr><td>" .$matchArray['email']. "</td><td>" .$matchArray['user_info']. "</td><td>" .$matchArray['sex']. "</td><td>" .$matchArray['age']. "</td><td>" .$matchArray['sports']. "</td></tr>";
+        echo "<div align=\"center\">";
+        echo "<br />Your profile<br />";
+        echo "<b>Email:</b> ". $matchArray['email'];
+        echo "<br /><b>User information:</b> ".$matchArray['user_info'];
+        echo "<br /><b>Gender:</b> ".$matchArray['sex'];
+        echo "<br /><b>Age:</b> ".$matchArray['age'];
+        echo "<br /><b>Sports:</b> ".$matchArray['sports'];
+        echo "</div>";
+     
+              
+            //echo "<tr><td>" .$matchArray['email']. "</td><td>" .$matchArray['user_info']. "</td><td>" .$matchArray['sex']. "</td><td>" .$matchArray['age']. "</td><td>" .$matchArray['sports']. "</td></tr>";
           }
-          echo "</table>";
+          //echo "</table>";
+          $matches->free();
       }
 ?>
 <a href="profile_edit.php" class="button">Edit profile.</a>

@@ -45,13 +45,14 @@ if(!isset($_SESSION['user']))
         <option value="running" selected>Running</option>
         <option value="gym">Gym</option>
         </select>
-        <input id="button_register" type= "submit" value="Save changes!">
+        <p><input id="button_register" type= "submit" value="Save changes!" class="button"></p>
         </form>
         </div>
         <div class="booking">
             <form name="picture_edit" id="picture_edit" action="profile.php">
+            <p>Upload picture here</p>
             <input type="file" name="pic" accept="image">
-            <input type="submit" class="button">
+                <input type="submit" class="button" value="Upload!">
         </form>
         </div>
     </body>
