@@ -74,7 +74,6 @@ else
           {
         
         echo "<div class=\"profile\" align=\"center\">";
-        //echo "<br />Your profile<br />";
         echo "<b>Email:</b> ". $matchArray['email'];
         echo "<br /><b>User information:</b> ".$matchArray['user_info'];
         echo "<br /><b>Gender:</b> ".$matchArray['sex'];
