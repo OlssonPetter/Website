@@ -29,6 +29,7 @@
 <p>Kund måste använda e-tjänsten utifrån dess syfte, alltså träning och hälsa. </p>
 <p>Kund och annonsör får inte dela information med religiösa eller politiska med tanke att influera andra.</p>
 <p>E-tjänsten är en politiskt och religiöst obunden plattform.</p>
+<p> Bokningslänkarna som finns i e-tjänsten kontrolleras inte av Activ8 och Activ8 ansvarar därför inte för innehållet av dessa länkade hemsidor.</p>
   </body>
       <link rel="stylesheet" href="projekt.css"/>
     <meta charset="utf-8">
