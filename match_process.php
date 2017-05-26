@@ -50,7 +50,7 @@ if(!isset($_SESSION['user']))
         while ($matchArray = $matches->fetch_assoc())
          
           {
-            echo "<tr><td>" .$matchArray['email']. "</td><td>" .$matchArray['age']. "</td></tr>";
+            echo '<tr><td><a href="friend.php?userid='. $matchArray["user_id"] . '">' .$matchArray["email"]. '</a></td><td>' .$matchArray["age"] . '</td></tr>';
           
           }
           echo "</table>";
