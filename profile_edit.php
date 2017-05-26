@@ -32,12 +32,12 @@ if(!isset($_SESSION['user']))
         <input type="password" placeholder="Enter your new password..." name="password_edit">
         <input placeholder="Add som information about yourself..."name="info_edit">
         <p> Choose gender </p>
-         <select name="sex_edit">
+         <p><select name="sex_edit">
      <option value="male"selected="">Male</option>
      <option value="female">Female</option>
      <option value="other">Other</option>
-   </select>
-        <input placeholder="Enter your age..."name= "age_edit">
+   </select></p>
+        <p><input placeholder="Enter your age..."name= "age_edit"></p>
        <p> What sport are you interested in? </p>
         <select name="sport_edit">
         <option value="football">Football</option>
