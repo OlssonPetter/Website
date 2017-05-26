@@ -9,7 +9,15 @@ body {
     background-size: cover;
 
 }
-
+#Först{
+    font-size: 50px;
+}
+#Mitten {
+    font-size: 75px;
+}
+#Sist {
+    40px;
+}
 .button  {
      background:  transparent;
      height:  38px;
