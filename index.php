@@ -14,7 +14,7 @@ session_start();
     <body>
 
 
-      <?php if (isset($_SESSION['user'])): echo 'Welcome, '.$_SESSION['name']; ?>
+      <?php if (isset($_SESSION['user'])):  ?>
 
         <div class="container">
           <a href="logout.php">Logout</a>

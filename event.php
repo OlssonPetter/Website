@@ -1,4 +1,22 @@
-<?php
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <div class="container">
+        <a href="logout.php">Logout</a>
+        <a href="index.php">ACTIV8</a>
+        <a href="profile.php">Profile</a>
+        <a href="event.php">Events</a>
+        <a href="booking.php">Booking</a>
+        <a href="about.php">Terms</a>
+        <a href="friends.php">Friends</a>
+      </div>
+    </head>
+<body>
+
+
+    <?php
 session_start();
 
 
@@ -34,7 +52,9 @@ require'anslutning.php';
             }
 
     }
-
+    ?>
+    <h2>All events</h2>
+    <?php
        $matches = $con->query("SELECT * FROM Event")
             or die("query failed");
 
@@ -49,24 +69,24 @@ require'anslutning.php';
           }
           echo "</table>";
       }
+    ?>
+    <h2>Events for you</h2>
+    <?php
+    
+    $currentUserSport = $_SESSION['usersport'];
+    $matches = $con->query("SELECT * FROM Event WHERE event_sport = '$currentUserSport'")
+            or die("query failed");
+    if ($matches != 0)
+      {
+        echo "<table><tr><th>Event name</th><th>Information</th><th>Location</th><th>Sport</th><th>Host</th></tr>";
+        while ($matchArray = $matches->fetch_assoc())
+          {
+            echo "<tr><td>" .$matchArray['event_name']. "</td><td>" .$matchArray['event_info']. "</td><td>" .$matchArray['event_location']. "</td><td>" .$matchArray['event_sport']. "</td><td>" .$matchArray['event_creator']. "</td></tr>";
+          }
+          echo "</table>";
+      }
 
 ?>
-
-<!DOCTYPE html>
-<html>
-    <head>
-      <div class="container">
-        <a href="logout.php">Logout</a>
-        <a href="index.php">ACTIV8</a>
-        <a href="profile.php">Profile</a>
-        <a href="event.php">Events</a>
-        <a href="booking.php">Booking</a>
-        <a href="about.php">Terms</a>
-        <a href="friends.php">Friends</a>
-      </div>
-    </head>
-<body>
-
     <a href="create_event.php" class="button" type="button" >+</a>
 </body>
     <link rel="stylesheet" href="projekt.css"/>
