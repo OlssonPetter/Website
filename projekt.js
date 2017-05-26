@@ -12,3 +12,4 @@ highlight_form.addEventListener('submit', function(event){
         return false;
     }
 },false );
+

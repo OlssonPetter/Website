@@ -45,10 +45,13 @@ if(!isset($_SESSION['user']))
 <?php
     if ($matches != 0)
       {
+   
         echo "<table><tr><th>Email</th><th>Age</th></tr>";
         while ($matchArray = $matches->fetch_assoc())
+         
           {
             echo "<tr><td>" .$matchArray['email']. "</td><td>" .$matchArray['age']. "</td></tr>";
+          
           }
           echo "</table>";
       }
