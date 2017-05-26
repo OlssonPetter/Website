@@ -63,11 +63,10 @@ else
 
 
 
-   
 
-      <form name="MyRegForm" id="MyRegForm" action="register.php"method="post">
+      <form name="MyRegForm" id="MyRegForm" action="register.php"method="post" onsubmit="return validateRegister()">
           <p><input placeholder="Enter your name..."name="name_register"></p>
-          <p><input placeholder="Enter your email..."name="email_register"></p>
+          <p><input placeholder="Enter your email..."name="email_register" id="email_register"></p>
         <p><input type="password" placeholder="Enter your password..." name="password_register"></p>
         <p><input placeholder="Add som information about yourself..."name="info_register"></p>
         <p> Choose gender </p>
