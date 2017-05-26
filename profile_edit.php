@@ -36,6 +36,7 @@ if(!isset($_SESSION['user']))
          <select name="sex_edit">
      <option value="male"selected="">Male</option>
      <option value="female">Female</option>
+     <option value="other">Other</option>
    </select>
         <input placeholder="Enter your age..."name= "age_edit">
        <p> What sport are you interested in? </p>
@@ -44,6 +45,13 @@ if(!isset($_SESSION['user']))
         <option value="tennis">Tennis</option>
         <option value="running" selected>Running</option>
         <option value="gym">Gym</option>
+        <option value="golf">Golf</option>
+        <option value="swimming">Swimming</option>
+        <option value="rugby">Rugby</option>
+        <option value="chess">Chess</option>
+        <option value="athletics">Athletics</option>
+        <option value="baseball">Baseball</option>
+        <option value="frisbee">Frisbee</option>
         </select>
         <p><input id="button_register" type= "submit" value="Save changes!" class="button"></p>
         </form>

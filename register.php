@@ -7,7 +7,7 @@ if (isset($_SESSION['user']))
   header("Location: index.php");
 }
 require 'anslutning.php';
-if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !empty($_POST['info_register'])|| !empty($_POST['sex_register'])|| !empty($_POST['age_register'])|| !empty($_POST['sport_register']))
+if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !empty($_POST['info_register'])|| !empty($_POST['sex_register'])|| !empty($_POST['age_register'])|| !empty($_POST['sport_register']) || $_POST['age_register'] > 18)
 {
   $email=mysqli_real_escape_string($con,$_POST['email_register']);
   $password=mysqli_real_escape_string($con,$_POST['password_register']);
@@ -67,6 +67,7 @@ else
          <select name="sex_register">
      <option value="male"selected="">Male</option>
      <option value="female">Female</option>
+     <option value="other">Other</option>
    </select>
         <p><input placeholder="Enter your age..."name= "age_register"></p>
        <p> What sport are you interested in? </p>
@@ -75,10 +76,17 @@ else
     <option value="tennis">Tennis</option>
     <option value="running" selected>Running</option>
     <option value="gym">Gym</option>
+    <option value="golf">Golf</option>
+    <option value="swimming">Swimming</option>
+    <option value="rugby">Rugby</option>
+    <option value="chess">Chess</option>
+    <option value="athletics">Athletics</option>
+    <option value="baseball">Baseball</option>
+    <option value="frisbee">Frisbee</option>
         </select>
           <p>I accepts Activ8's <a href="about.php">terms and conditions</a><input type="checkbox" name="checkbox" id="checkbox"></p>
         <p><input class ="button"id="button_register" type= "submit" value="Register"></p>
-            <p><a href="login.php" class="button">here</a>.</p>
+            <p><a href="login.php" class="button">Login</a>.</p>
         </form>
 
     </body>
