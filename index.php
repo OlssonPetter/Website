@@ -14,7 +14,7 @@ session_start();
     <body>
 
 
-      <?php if (isset($_SESSION['user'])): echo 'Welcome, '.$_SESSION['user']; ?>
+      <?php if (isset($_SESSION['user'])): echo 'Welcome, '.$_SESSION['name']; ?>
 
         <div class="container">
             <a href="logout.php">Logout?</a>
@@ -26,10 +26,9 @@ session_start();
             <a href="friends.php">Friends</a>
             <a href="match.php">Find friends</a>
         </div>
-      <h1>Welcome, you are now logged in!</h1>
         
     <form name="FormMatch" id="FormMatch" action="match_process.php" method="post">
-      <input type="submit" id="button_match" value="Find training partners!" class="button">
+      <input type="submit" id="button_match" value="TIME TO ACTIV8!" class="button">
     </form>
 
 

@@ -100,3 +100,30 @@ form {
     opacity: 0.7;
     border-style:groove;
 }
+#FormMatch
+{
+    margin-top: 7%;
+    background-color: transparent;
+    border-style: groove;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+#button_match {
+    background: white;
+    opacity: 0.7;
+     height:  150px;
+     line-height:  40px;
+     border:  2px solid orange;
+     display:  inline-block;
+     float:  none;
+     text-align:  center;
+     width:  400px;
+     padding:  0px!important;
+     font-size:  40px;
+     color: orange;
+}
+#button_match:hover  {
+     color:  black;
+     background:  rgba(255, 255, 255, 0.7);
+ }
