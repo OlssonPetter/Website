@@ -40,11 +40,7 @@ if(!empty($_POST['password_edit'])|| !empty($_POST['info_edit'])|| !empty($_POST
   $image=$_POST['pic'];
   $password=$password.$salt;
   $password=sha1($password);
-  if (preg_match('/\S+@\S+\.\S+/', $email) === 0)
-  {
-    echo"Unvalid emailadress ";
-    exit();
-  }
+
   if ($age < 18)
   {
     echo"You are to young my friend!";
