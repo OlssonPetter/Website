@@ -19,7 +19,8 @@ body {
     40px;
 }
 .button  {
-     background:  transparent;
+     background: white;
+    opacity: 0.7;
      height:  38px;
      line-height:  40px;
      border:  2px solid orange;
@@ -34,8 +35,8 @@ body {
  }
 
 .button:hover  {
-     color:  #fff;
-     background:  rgba(255, 255, 255, 0.2);
+     color:  black;
+     background:  rgba(255, 255, 255, 0.7);
  }
 table {
     border-collapse: collapse;
