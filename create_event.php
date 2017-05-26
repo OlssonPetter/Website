@@ -23,7 +23,7 @@ if(!isset($_SESSION['user']))
     </div>
     </head>
     <body>
-        <form name="Create_Event_Form" id="Create_Event_Form" action="event.php"method="post">
+        <form name="Create_Event_Form" id="Create_Event_Form" action="event.php"method="post" onsubmit="return validateEvent()">
         <p></p><input placeholder="Enter event name..." name="event_name"></p>
         <p><input placeholder="Enter event information..."name="event_info"></p>
         <p><input placeholder="Enter event location..."name="event_location"></p>

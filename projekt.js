@@ -61,7 +61,7 @@ function validateLogin(){
   return true;
 }
 
-function validateRegister(){
+function validateProfileEdit(){
   var pass = document.MyRegForm.password_edit.value;
   if (pass == "" || pass.trim() == '')
   {
@@ -71,7 +71,31 @@ function validateRegister(){
   var age = document.MyRegForm.age_edit.value;
   if(age < 18 || age == "" || age.trim() == '')
   {
-    alert("You must be over 18 year old in order to create an account!")
+    alert("You must be over 18 year old in order to create an account!");
+    return false;
   }
+  return true;
+}
+
+function validateEvent(){
+  var info = document.Create_Event_Form.event_info.value;
+  if (info == "" || info.trim() == '')
+  {
+    alert("Info field must be filled out!");
+    return false;
+  }
+  var location = document.Create_Event_Form.event_location.value;
+  if (location == "" || location.trim() == '')
+  {
+    alert("Location field must be filled out!");
+    return false;
+  }
+  var name = document.Create_Event_Form.event_name.value;
+  if (name == "" || pass.trim() == '')
+  {
+    alert("Name field must be filled out!");
+    return false;
+  }
+
   return true;
 }
