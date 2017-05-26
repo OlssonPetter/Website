@@ -18,7 +18,7 @@
   <head>
     <title>ACTIV8</title>
     <div class="container">
-        <a href="index.php">Homepage</a>
+        <a href="index.php">ACTIV8</a>
         <a href="profile.php">Profile</a>
         <a href="event.php">Events</a>
         <a href="booking.php">Booking</a>
