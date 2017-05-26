@@ -7,7 +7,7 @@ if (isset($_SESSION['user']))
   header("Location: index.php");
 }
 require 'anslutning.php';
-if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !empty($_POST['info_register'])|| !empty($_POST['sex_register'])|| !empty($_POST['age_register'])|| !empty($_POST['sport_register']) || $_POST['age_register'] > 18)
+if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !empty($_POST['info_register'])|| !empty($_POST['sex_register'])|| !empty($_POST['age_register'])|| !empty($_POST['sport_register']))
 {
   $email=mysqli_real_escape_string($con,$_POST['email_register']);
   $password=mysqli_real_escape_string($con,$_POST['password_register']);
@@ -21,6 +21,11 @@ if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !emp
   if (preg_match('/\S+@\S+\.\S+/', $email) === 0)
   {
     echo"Unvalid emailadress ";
+    exit();
+  }
+  if ($age < 18)
+  {
+    echo"You are to young my friend!";
     exit();
   }
   $results=$con->query("SELECT * FROM User WHERE email ='$email'");

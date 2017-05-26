@@ -33,6 +33,13 @@ if(!isset($_SESSION['user']))
         <option value="football">Football</option>
         <option value="tennis">Tennis</option>
         <option value="gym">Gym</option>
+        <option value="golf">Golf</option>
+        <option value="swimming">Swimming</option>
+        <option value="rugby">Rugby</option>
+        <option value="chess">Chess</option>
+        <option value="athletics">Athletics</option>
+        <option value="baseball">Baseball</option>
+        <option value="frisbee">Frisbee</option>
         </select>
         <p><input class="button" id="create_event" type= "submit" value="Create event!"></p>
         </form>

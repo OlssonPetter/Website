@@ -37,8 +37,19 @@ if(!empty($_POST['password_edit'])|| !empty($_POST['info_edit'])|| !empty($_POST
   $age=mysqli_real_escape_string($con,$_POST['age_edit']);
   $sport=mysqli_real_escape_string($con,$_POST['sport_edit']);
   $salt= uniqid(mt_rand(),true);
+  $image=$_POST['pic'];
   $password=$password.$salt;
   $password=sha1($password);
+  if (preg_match('/\S+@\S+\.\S+/', $email) === 0)
+  {
+    echo"Unvalid emailadress ";
+    exit();
+  }
+  if ($age < 18)
+  {
+    echo"You are to young my friend!";
+    exit();
+  }
 
   $results=$con->query("SELECT * FROM User WHERE email ='$email'");
   $records=$results-> fetch_assoc();
@@ -72,7 +83,7 @@ else
         //echo "<table><tr><th>Email</th><th>User information</th><th>Gender</th><th>Age</th><th>Sport</th></tr>";
         while ($matchArray = $matches->fetch_assoc())
           {
-        
+
         echo "<div class=\"profile\" align=\"center\">";
         echo "<b>Email:</b> ". $matchArray['email'];
         echo "<br /><b>User information:</b> ".$matchArray['user_info'];
@@ -80,8 +91,8 @@ else
         echo "<br /><b>Age:</b> ".$matchArray['age'];
         echo "<br /><b>Sport:</b> ".$matchArray['sports'];
         echo "</div>";
-     
-    
+
+
             //echo "<tr><td>" .$matchArray['email']. "</td><td>" .$matchArray['user_info']. "</td><td>" .$matchArray['sex']. "</td><td>" .$matchArray['age']. "</td><td>" .$matchArray['sports']. "</td></tr>";
           }
           //echo "</table>";
