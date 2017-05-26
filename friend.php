@@ -64,15 +64,22 @@ require'anslutning.php';
         echo "<br /><b>Sport:</b> ".$matchArray['sports'];
 
         echo '<input type="hidden" name="friendid" value="'.$matchArray["user_id"] .'">';
-        echo '<button type="submit">Lägg till vän</button>';
+        echo '<button class=\"button\"type="submit">Lägg till vän</button>';
         echo "</form>";
 
           }
-
+          
           $matches->free();
         }
     ?>
-
+        <p>How was your workout with this training partner?</p>
+        <a href="feedback.php" class="button">Add feedback</a>
+        <?php
+        //$current=$_GET["userid"]
+        //echo '<tr><td><a href="friend.php?userid='. $current .'</a>
+        ?>
+        
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="projekt.js" ></script>
     </body>
