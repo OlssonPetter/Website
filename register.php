@@ -63,7 +63,7 @@ else
 
 
 
-      <h1>Register below</h1>
+   
 
       <form name="MyRegForm" id="MyRegForm" action="register.php"method="post">
           <p><input placeholder="Enter your name..."name="name_register"></p>
