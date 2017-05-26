@@ -41,7 +41,7 @@ require'anslutning.php';
             
             if($con->query($sql) == true)
             {
-                
+                header("Location:friends.php");
             }
     
         }

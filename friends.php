@@ -6,6 +6,7 @@ if(!isset($_SESSION['user']))
 {
   header("Location:index.php");
 }
+
 ?>
 
 !<!DOCTYPE html>
@@ -26,6 +27,21 @@ if(!isset($_SESSION['user']))
     <h1> Here are your friends!</h1>
 </head>
 <body>
+    <?php
+        require 'anslutning.php';
+    
+    $currentUser = $_SESSION['user'];
+    $sql ="SELECT * FROM user INNER JOIN relation ON user.user_id = relation.followed";
+    
+    $query = mysqli_query($con, $sql) or die (mysqli_error($con));
+    
+    echo "<table><tr><th>Email</th><th>Age</th></tr>";
+    while($row = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
+        echo '<tr><td><a href="friend.php?userid='. $row["user_id"] . '">' .$row["email"]. '</a></td><td>' .$matchArray["age"] . '</td></tr>';    
+        
+    }
+     echo "</table>";
+    ?>
 </body>
   <link rel="stylesheet" href="projekt.css"/>
 </html>
