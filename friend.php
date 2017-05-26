@@ -57,7 +57,8 @@ require'anslutning.php';
           {
 
         echo "<form class=\"profile\" align=\"center\" method='post'>";
-        echo "<b>Email:</b> ". $matchArray['email'];
+        echo "<b>Name:</b> ". $matchArray['name'];
+        echo "<br /><b>Email:</b> ".$matchArray['email'];
         echo "<br /><b>User information:</b> ".$matchArray['user_info'];
         echo "<br /><b>Gender:</b> ".$matchArray['sex'];
         echo "<br /><b>Age:</b> ".$matchArray['age'];

@@ -80,12 +80,12 @@ else
 
     if ($matches != 0)
       {
-        //echo "<table><tr><th>Email</th><th>User information</th><th>Gender</th><th>Age</th><th>Sport</th></tr>";
         while ($matchArray = $matches->fetch_assoc())
           {
 
         echo "<div class=\"profile\" align=\"center\">";
-        echo "<b>Email:</b> ". $matchArray['email'];
+        echo "<b>Name:</b> ". $matchArray['name'];
+         echo "<br /><b>Email:</b> ".$matchArray['email'];
         echo "<br /><b>User information:</b> ".$matchArray['user_info'];
         echo "<br /><b>Gender:</b> ".$matchArray['sex'];
         echo "<br /><b>Age:</b> ".$matchArray['age'];

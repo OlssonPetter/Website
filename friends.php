@@ -38,9 +38,9 @@ if(!isset($_SESSION['user']))
     ?>
       <form action="profile.php" method="post" name="to_profile">
         <?php
-    echo "<table><tr><th>Email</th><th>Age</th></tr>";
+    echo "<table><tr><th>Name</th><th>Sport</th></tr>";
     while($row = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
-        echo '<tr><td><a href="friend.php?userid='. $row["user_id"] . '">' .$row["email"]. '</a></td><td>' .$row["age"] . '</td></tr>';    
+        echo '<tr><td><a href="friend.php?userid='. $row["user_id"] . '">' .$row["name"]. '</a></td><td>' .$row["sports"] . '</td></tr>';    
         
     }
      echo "</table>";

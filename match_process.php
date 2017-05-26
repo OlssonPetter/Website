@@ -46,11 +46,11 @@ if(!isset($_SESSION['user']))
     if ($matches != 0)
       {
    
-        echo "<table><tr><th>Email</th><th>Age</th></tr>";
+        echo "<table><tr><th>Name</th><th>Age</th></tr>";
         while ($matchArray = $matches->fetch_assoc())
          
           {
-            echo '<tr><td><a href="friend.php?userid='. $matchArray["user_id"] . '">' .$matchArray["email"]. '</a></td><td>' .$matchArray["age"] . '</td></tr>';
+            echo '<tr><td><a href="friend.php?userid='. $matchArray["user_id"] . '">' .$matchArray["name"]. '</a></td><td>' .$matchArray["age"] . '</td></tr>';
           
           }
           echo "</table>";

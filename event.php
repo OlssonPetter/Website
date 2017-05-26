@@ -17,7 +17,7 @@ require'anslutning.php';
     $event_info =mysqli_real_escape_string($con,$_POST['event_info']);
     $event_location =mysqli_real_escape_string($con,$_POST['event_location']);
     $event_sport = mysqli_real_escape_string($con,$_POST['event_sport']);
-    $event_creator = $_SESSION['email'];
+    $event_creator = $_SESSION['name'];
 
     if(!empty($_POST['event_name'])|| !empty($_POST['event_info'])|| !empty($_POST['event_location'])|| !empty($_POST['event_sport'])|| !empty($_POST['event_creator']))
     {

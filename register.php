@@ -7,7 +7,7 @@ if (isset($_SESSION['user']))
   header("Location: index.php");
 }
 require 'anslutning.php';
-if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !empty($_POST['info_register'])|| !empty($_POST['sex_register'])|| !empty($_POST['age_register'])|| !empty($_POST['sport_register']))
+if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !empty($_POST['info_register'])|| !empty($_POST['sex_register'])|| !empty($_POST['age_register'])|| !empty($_POST['sport_register']) || !empty($_POST['name_register']))
 {
   $email=mysqli_real_escape_string($con,$_POST['email_register']);
   $password=mysqli_real_escape_string($con,$_POST['password_register']);
@@ -15,6 +15,7 @@ if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !emp
   $sex=mysqli_real_escape_string($con,$_POST['sex_register']);
   $age=mysqli_real_escape_string($con,$_POST['age_register']);
   $sport=mysqli_real_escape_string($con,$_POST['sport_register']);
+ $name=mysqli_real_escape_string($con,$_POST['name_register']);
   $salt= uniqid(mt_rand(),true);
   $password=$password.$salt;
   $password=sha1($password);
@@ -36,7 +37,7 @@ if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !emp
   }
   else
   {
-      $sql="INSERT INTO User VALUES('','$email','$info','$password','$salt','$sex','$age','$sport','')";
+      $sql="INSERT INTO User VALUES('','$email','$info','$password','$salt','$sex','$age','$sport','', '$name')";
   }
 if($con->query($sql)===TRUE)
 {
@@ -65,6 +66,7 @@ else
       <h1>Register below</h1>
 
       <form name="MyRegForm" id="MyRegForm" action="register.php"method="post">
+          <p><input placeholder="Enter your name..."name="name_register"></p>
           <p><input placeholder="Enter your email..."name="email_register"></p>
         <p><input type="password" placeholder="Enter your password..." name="password_register"></p>
         <p><input placeholder="Add som information about yourself..."name="info_register"></p>

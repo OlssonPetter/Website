@@ -26,6 +26,7 @@ if(!empty($_POST['email_login']) && !empty($_POST['password_login']))
      $_SESSION['email'] = $results['email'];
      $_SESSION['usersport'] = $results['sports'];
      $_SESSION['userrole'] = $results['role'];
+    $_SESSION['name'] = $results['name'];
 
      if ($_SESSION['userrole'] == "admin")
      {
