@@ -6,6 +6,8 @@ if(!isset($_SESSION['user']))
 {
   header("Location:index.php");
 }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -29,21 +31,32 @@ if(!isset($_SESSION['user']))
             <a href="match.php">Find friends</a>
         </div>
      <?php
-session_start();
 
 require'anslutning.php';
+        
+        if(isset($_POST['friendid']))
+        {
+    
+            $sql = "INSERT INTO `relation`(`follower`, `followed`) VALUES ('".$_SESSION['user']."', '".$_POST['friendid']."')";
+            
+            if($con->query($sql) == true)
+            {
+                header("Location:friends.php");
+            }
+    
+        }
 
         $friendid = $_GET["userid"];
-    $matches = $con->query("SELECT * FROM User WHERE user_id = '$friendid'")
+        $matches = $con->query("SELECT * FROM User WHERE user_id = '$friendid'")
         or die("query failed");
 
     if ($matches != 0)
       {
-        //echo "<table><tr><th>Email</th><th>User information</th><th>Gender</th><th>Age</th><th>Sport</th></tr>";
+       
         while ($matchArray = $matches->fetch_assoc())
           {
 
-        echo "<form class=\"profile\" align=\"center\">";
+        echo "<form class=\"profile\" align=\"center\" method='post'>";
         echo "<b>Email:</b> ". $matchArray['email'];
         echo "<br /><b>User information:</b> ".$matchArray['user_info'];
         echo "<br /><b>Gender:</b> ".$matchArray['sex'];
@@ -53,12 +66,12 @@ require'anslutning.php';
         echo '<input type="hidden" name="friendid" value="'.$matchArray["user_id"] .'">';
         echo '<button type="submit">Lägg till vän</button>';
         echo "</form>";
-            //echo "<tr><td>" .$matchArray['email']. "</td><td>" .$matchArray['user_info']. "</td><td>" .$matchArray['sex']. "</td><td>" .$matchArray['age']. "</td><td>" .$matchArray['sports']. "</td></tr>";
+
           }
-          //echo "</table>";
+         
           $matches->free();
         }
-        ?>
+    ?>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="projekt.js" ></script>
