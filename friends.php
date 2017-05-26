@@ -31,17 +31,21 @@ if(!isset($_SESSION['user']))
         require 'anslutning.php';
     
     $currentUser = $_SESSION['user'];
-    $sql ="SELECT * FROM user INNER JOIN relation ON user.user_id = relation.followed";
+    $sql ="SELECT * FROM user INNER JOIN relation ON user.user_id = relation.followed WHERE relation.follower = $currentUser";
     
     $query = mysqli_query($con, $sql) or die (mysqli_error($con));
     
+    ?>
+      <form action="profile.php" method="post" name="to_profile">
+        <?php
     echo "<table><tr><th>Email</th><th>Age</th></tr>";
     while($row = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
-        echo '<tr><td><a href="friend.php?userid='. $row["user_id"] . '">' .$row["email"]. '</a></td><td>' .$matchArray["age"] . '</td></tr>';    
+        echo '<tr><td><a href="friend.php?userid='. $row["user_id"] . '">' .$row["email"]. '</a></td><td>' .$row["age"] . '</td></tr>';    
         
     }
      echo "</table>";
     ?>
+         </form>
 </body>
   <link rel="stylesheet" href="projekt.css"/>
 </html>
