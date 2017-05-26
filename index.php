@@ -17,16 +17,15 @@ session_start();
       <?php if (isset($_SESSION['user'])): echo 'Welcome, '.$_SESSION['name']; ?>
 
         <div class="container">
-            <a href="logout.php">Logout?</a>
-            <a href="index.php">Homepage</a>
-            <a href="profile.php">Profile</a>
-            <a href="event.php">Events</a>
-            <a href="booking.php">Booking</a>
-            <a href="about.php">Terms</a>
-            <a href="friends.php">Friends</a>
-            <a href="match.php">Find friends</a>
+          <a href="logout.php">Logout</a>
+          <a href="index.php">ACTIV8</a>
+          <a href="profile.php">Profile</a>
+          <a href="event.php">Events</a>
+          <a href="booking.php">Booking</a>
+          <a href="about.php">Terms</a>
+          <a href="friends.php">Friends</a>
         </div>
-        
+
     <form name="FormMatch" id="FormMatch" action="match_process.php" method="post">
       <input type="submit" id="button_match" value="TIME TO ACTIV8!" class="button">
     </form>

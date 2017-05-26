@@ -21,29 +21,28 @@ if(!isset($_SESSION['user']))
 
     <body>
         <div class="container">
-            <a href="logout.php">Logout?</a>
-            <a href="index.php">Homepage</a>
-            <a href="profile.php">Profile</a>
-            <a href="event.php">Events</a>
-            <a href="booking.php">Booking</a>
-            <a href="about.php">Terms</a>
-            <a href="friends.php">Friends</a>
-            <a href="match.php">Find friends</a>
+          <a href="logout.php">Logout</a>
+          <a href="index.php">ACTIV8</a>
+          <a href="profile.php">Profile</a>
+          <a href="event.php">Events</a>
+          <a href="booking.php">Booking</a>
+          <a href="about.php">Terms</a>
+          <a href="friends.php">Friends</a>
         </div>
      <?php
 
 require'anslutning.php';
-        
+
         if(isset($_POST['friendid']))
         {
-    
+
             $sql = "INSERT INTO `relation`(`follower`, `followed`) VALUES ('".$_SESSION['user']."', '".$_POST['friendid']."')";
-            
+
             if($con->query($sql) == true)
             {
                 header("Location:friends.php");
             }
-    
+
         }
 
         $friendid = $_GET["userid"];
@@ -52,7 +51,7 @@ require'anslutning.php';
 
     if ($matches != 0)
       {
-       
+
         while ($matchArray = $matches->fetch_assoc())
           {
 
@@ -69,11 +68,11 @@ require'anslutning.php';
         echo "</form>";
 
           }
-         
+
           $matches->free();
         }
     ?>
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="projekt.js" ></script>
     </body>

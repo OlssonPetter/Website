@@ -12,16 +12,15 @@ if(!isset($_SESSION['user']))
 <html>
     <head>
     <title>ACTIV8</title>
-<div class="container">
-    <a href="logout.php">Logout?</a>
-    <a href="index.php">Homepage</a>
-    <a href="profile.php">Profile</a>
-    <a href="event.php">Events</a>
-    <a href="booking.php">Booking</a>
-    <a href="about.php">Terms</a>
-    <a href="friends.php">Friends</a>
-    <a href="match.php">Find friends</a>
-</div>
+    <div class="container">
+      <a href="logout.php">Logout</a>
+      <a href="index.php">ACTIV8</a>
+      <a href="profile.php">Profile</a>
+      <a href="event.php">Events</a>
+      <a href="booking.php">Booking</a>
+      <a href="about.php">Terms</a>
+      <a href="friends.php">Friends</a>
+    </div>
     </head>
     <body>
      <?php
@@ -37,15 +36,8 @@ if(!empty($_POST['password_edit'])|| !empty($_POST['info_edit'])|| !empty($_POST
   $age=mysqli_real_escape_string($con,$_POST['age_edit']);
   $sport=mysqli_real_escape_string($con,$_POST['sport_edit']);
   $salt= uniqid(mt_rand(),true);
-  $image=$_POST['pic'];
   $password=$password.$salt;
   $password=sha1($password);
-
-  if ($age < 18)
-  {
-    echo"You are to young my friend!";
-    exit();
-  }
 
   $results=$con->query("SELECT * FROM User WHERE email ='$email'");
   $records=$results-> fetch_assoc();
@@ -76,12 +68,12 @@ else
 
     if ($matches != 0)
       {
+        //echo "<table><tr><th>Email</th><th>User information</th><th>Gender</th><th>Age</th><th>Sport</th></tr>";
         while ($matchArray = $matches->fetch_assoc())
           {
 
         echo "<div class=\"profile\" align=\"center\">";
-        echo "<b>Name:</b> ". $matchArray['name'];
-         echo "<br /><b>Email:</b> ".$matchArray['email'];
+        echo "<b>Email:</b> ". $matchArray['email'];
         echo "<br /><b>User information:</b> ".$matchArray['user_info'];
         echo "<br /><b>Gender:</b> ".$matchArray['sex'];
         echo "<br /><b>Age:</b> ".$matchArray['age'];

@@ -13,14 +13,13 @@ if(!isset($_SESSION['user']))
 <html>
     <head>
       <div class="container">
-          <a href="logout.php">Logout?</a>
-          <a href="index.php">Homepage</a>
-          <a href="profile.php">Profile</a>
-          <a href="event.php">Events</a>
-          <a href="booking.php">Booking</a>
-          <a href="about.php">Terms</a>
-          <a href="friends.php">Friends</a>
-          <a href="match.php">Find friends</a>
+        <a href="logout.php">Logout</a>
+        <a href="index.php">ACTIV8</a>
+        <a href="profile.php">Profile</a>
+        <a href="event.php">Events</a>
+        <a href="booking.php">Booking</a>
+        <a href="about.php">Terms</a>
+        <a href="friends.php">Friends</a>
       </div>
     </head>
     <body>
@@ -29,11 +28,9 @@ if(!isset($_SESSION['user']))
 
     ?>
         <div class="booking">
-
-        <form name="MyRegForm" id="MyRegForm" action="profile.php"method="post" onsubmit="return validateProfileEdit()">
-        <p><input type="password" placeholder="Enter your new password..." name="password_edit"></p>
-        <p><input placeholder="Add som information about yourself..."name="info_edit"></p>
-
+        <form name="MyRegForm" id="MyRegForm" action="profile.php"method="post">
+        <input type="password" placeholder="Enter your new password..." name="password_edit">
+        <input placeholder="Add som information about yourself..."name="info_edit">
         <p> Choose gender </p>
          <select name="sex_edit">
      <option value="male"selected="">Male</option>
