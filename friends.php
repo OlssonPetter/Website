@@ -9,7 +9,7 @@ if(!isset($_SESSION['user']))
 
 ?>
 
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title> ACTIV8 </title>
