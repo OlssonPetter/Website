@@ -24,7 +24,7 @@ session_start();
       <p> We hope you enjoy your stay!</p>
       <p> From your friends at team ACTIV8</p>
       <p> Oskar Landén, Erik Lidén and Petter Olsson</p>
-      <p> If interested sign up here!<p>
+      <p>Sign up here!<p>
         <p><a href="register.php" class="button">Register</a>.</p>
     </form>
     <?php else: ?>
