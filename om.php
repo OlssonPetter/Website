@@ -20,8 +20,8 @@ session_start();
     <?php if (!isset($_SESSION['user'])):  ?>
     <form id="terms_form">
       <h1> About</h1>
-      <p> Our e-service strives to help our customers build relations with other training partners.</p>
-      <p> Hope you enjoy our service!</p>
+      <p> Our e-service strives to help our customers build relations with other training partners that share the same sport interest.</p>
+      <p> We hope you enjoy your stay!</p>
       <p> From your friends at team ACTIV8</p>
       <p> Oskar Landén, Erik Lidén and Petter Olsson</p>
       <p> If interested sign up here!<p>
@@ -30,8 +30,8 @@ session_start();
     <?php else: ?>
       <form id="terms_form">
         <h1> About</h1>
-        <p> Our e-service strives to help our customers build relations with other training partners.</p>
-        <p> Hope you enjoy our service!</p>
+        <p> Our e-service strives to help our customers build relations with other training partners that share the same sport interest.</p>
+        <p> We hope you enjoy your stay!</p>
         <p> From your friends at team ACTIV8</p>
         <p> Oskar Landén, Erik Lidén and Petter Olsson</p>
         <?php endif; ?>
