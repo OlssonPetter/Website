@@ -23,15 +23,17 @@ if(!isset($_SESSION['user']))
       </div>
     </head>
     <body>
-      <h1 class="title_h1"> You can edit your profile information here:</h1>
+      <h1 class="title_h1"> You can update your profile information here:</h1>
     <?php
 
 
     ?>
         <div class="booking">
         <form name="MyRegForm" id="MyRegForm" action="profile.php"method="post">
-        <input type="password" placeholder="Enter your new password..." name="password_edit">
-        <input placeholder="Add som information about yourself..."name="info_edit">
+          <p> Update password</p>
+        <p><input type="password" placeholder="Enter your new password..." name="password_edit"></p>
+        <p> Update your profile information</p>
+        <input placeholder="Add some information about yourself..."name="info_edit">
         <p> Choose gender </p>
          <p><select name="sex_edit">
      <option value="male"selected="">Male</option>
