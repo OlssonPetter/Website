@@ -43,7 +43,8 @@ require'anslutning.php';
           //var_dump($matchArray);
           //if($matchArray == 0)
           //{
-            $sql = "INSERT INTO `relation`(`follower`, `followed`) VALUES ('".$_SESSION['user']."', '".$_POST['friendid']."')";
+            $sql = "INSERT INTO `relation`(`follower`, `followed`)
+                    VALUES ('".$_SESSION['user']."', '".$_POST['friendid']."')";
 
             if($con->query($sql) == true)
             {

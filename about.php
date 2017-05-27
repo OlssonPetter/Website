@@ -4,14 +4,8 @@
   <title>ACTIV8</title>
   <meta charset="utf-8">
 <div class="container">
-<a href="about.php">About</a>
-  <a href="profile.php">Profile</a>
-  <a href="friends.php">Friends</a>
-<a href="event.php">Events</a>
-  <a href="booking.php">Booking</a>
-    <a href="index.php">Homepage</a>
-    <a href="match.php">Find friends</a>
-    <a href="about.php">About</a>
+    <a href="index.php">ACTIV8</a>
+    <a href="about.php">Terms</a>
 </div>
 </head>
   <body>
