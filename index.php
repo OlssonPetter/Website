@@ -15,7 +15,7 @@ session_start();
 
 
       <?php if (isset($_SESSION['user'])):  ?>
-     <h1 class="instruc_h1">Press the button to find people with the same sport interest as you!</h1>
+     <h1 class="title_h1">Press the button to find people with the same sport interest as you!</h1>
         <div class="container">
           <a href="logout.php">Logout</a>
           <a href="index.php">ACTIV8</a>

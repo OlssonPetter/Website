@@ -54,7 +54,7 @@ require'anslutning.php';
 
     }
     ?>
-    <h2>All events</h2>
+    <h2 class="title_h1">All events</h2>
     <?php
        $matches = $con->query("SELECT * FROM Event")
             or die("query failed");

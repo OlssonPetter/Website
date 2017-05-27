@@ -14,7 +14,7 @@
       <p>The customer must be 18 years or older to create an account.</p>
       <p>The customer is responsible for its own  account security.</p>
       <p>The customer is responsible for interactions with other customers, and should know that we do not perform any background checks of our customers.</p>
-      <p>Spam is not allowed.</p>
+      <p>Spam is not allowed in any form.</p>
       <p>Only one account per person may be created.</p>
     <p>Personal harassment and racism is not allowed.</p>
       <p>Customer may not plan illegal events or commit illegal acts with help from or on the e-service.</p>

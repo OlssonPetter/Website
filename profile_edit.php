@@ -23,6 +23,7 @@ if(!isset($_SESSION['user']))
       </div>
     </head>
     <body>
+      <h1 class="title_h1"> You can edit your profile information here:</h1>
     <?php
 
 

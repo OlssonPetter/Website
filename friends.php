@@ -23,7 +23,7 @@ if(!isset($_SESSION['user']))
     <a href="friends.php">Friends</a>
   </div>
     <meta charset="utf-8">
-    <h1> Here are your friends, contact them via email to start working out!</h1>
+    <h1 class ="title_h1"> Here are your friends, contact them via email to start working out!</h1>
 </head>
 <body>
     <?php

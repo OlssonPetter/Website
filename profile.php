@@ -23,6 +23,7 @@ if(!isset($_SESSION['user']))
     </div>
     </head>
     <body>
+      <h1 class="title_h1"> This is your profile</h1>
      <?php
 session_start();
 
