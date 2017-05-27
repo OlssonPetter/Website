@@ -51,7 +51,7 @@ if(!empty($_POST['email_login']) && !empty($_POST['password_login']))
     <title>ACTIV8</title>
     <div class="container">
         <a href="index.php">Homepage</a>
-        <a href="about.php">Terms</a>
+        <a href="om.php">About</a>
     </div>
     </head>
     <body>

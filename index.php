@@ -23,6 +23,7 @@ session_start();
           <a href="event.php">Events</a>
           <a href="booking.php">Booking</a>
           <a href="about.php">Terms</a>
+          <a href="om.php">About</a>
           <a href="friends.php">Friends</a>
         </div>
 
@@ -36,7 +37,7 @@ session_start();
       <?php else: ?>
         <div class="container">
             <a href="index.php">Homepage</a>
-            <a href="about.php">Terms</a>
+            <a href="om.php">About</a>
         </div>
     <h2 class ="Startsida"id="Först">WELCOME TO</h2>
     <h1 class ="Startsida"id="Mitten">ACTIV8</h1>

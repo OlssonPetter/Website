@@ -18,7 +18,7 @@ if(!isset($_SESSION['user']))
       <a href="profile.php">Profile</a>
       <a href="event.php">Events</a>
       <a href="booking.php">Booking</a>
-      <a href="about.php">Terms</a>
+      <a href="om.php">About</a>
       <a href="friends.php">Friends</a>
     </div>
     </head>
@@ -35,7 +35,7 @@ if(!empty($_POST['password_edit'])|| !empty($_POST['info_edit'])|| !empty($_POST
   $sex=mysqli_real_escape_string($con,$_POST['sex_edit']);
   $age=mysqli_real_escape_string($con,$_POST['age_edit']);
   $sport=mysqli_real_escape_string($con,$_POST['sport_edit']);
-  $_SESSION['usersport'] = $sport; 
+  $_SESSION['usersport'] = $sport;
   $salt= uniqid(mt_rand(),true);
   $password=$password.$salt;
   $password=sha1($password);
