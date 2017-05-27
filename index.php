@@ -35,7 +35,7 @@ session_start();
 
       <?php else: ?>
         <div class="container">
-            <a href="index.php">Homepage</a>
+            <a href="index.php">ACTIV8</a>
             <a href="om.php">About</a>
         </div>
     <h2 class ="Startsida"id="Först">WELCOME TO</h2>
