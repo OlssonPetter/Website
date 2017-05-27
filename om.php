@@ -20,14 +20,20 @@ session_start();
     <?php if (!isset($_SESSION['user'])):  ?>
     <form id="terms_form">
       <h1> About</h1>
-      <p> Our e-service strives to help potential training partners find each other</p>
+      <p> Our e-service strives to help our customers build relations with other training partners.</p>
+      <p> Hope you enjoy our service!</p>
+      <p> From your friends at team ACTIV8</p>
+      <p> Oskar Landén, Erik Lidén and Petter Olsson</p>
       <p> If interested sign up here!<p>
         <p><a href="register.php" class="button">Register</a>.</p>
     </form>
     <?php else: ?>
       <form id="terms_form">
         <h1> About</h1>
-        <p> Our e-service strives to help potential training partners find each other</p>
+        <p> Our e-service strives to help our customers build relations with other training partners.</p>
+        <p> Hope you enjoy our service!</p>
+        <p> From your friends at team ACTIV8</p>
+        <p> Oskar Landén, Erik Lidén and Petter Olsson</p>
         <?php endif; ?>
   </body>
   <link rel="stylesheet" href="projekt.css"/>
