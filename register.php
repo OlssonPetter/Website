@@ -41,7 +41,7 @@ if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !emp
   }
 if($con->query($sql)===TRUE)
 {
-  echo("User created");
+  echo("User created, Please login");
 }
 else
     {
