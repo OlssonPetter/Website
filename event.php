@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <title>ACTIV8</title>
       <div class="container">
         <a href="logout.php">Logout</a>
         <a href="index.php">ACTIV8</a>
@@ -72,7 +73,7 @@ require'anslutning.php';
     ?>
     <h2>Events for you</h2>
     <?php
-    
+
     $currentUserSport = $_SESSION['usersport'];
     $matches = $con->query("SELECT * FROM Event WHERE event_sport = '$currentUserSport'")
             or die("query failed");
