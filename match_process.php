@@ -23,7 +23,7 @@ if(!isset($_SESSION['user']))
     </div>
   </head>
   <body>
-    <h1>Here are your matches!</h1>
+    <h1>Here are your matches, click their names to find out more about them! </h1>
 
     <?php
 

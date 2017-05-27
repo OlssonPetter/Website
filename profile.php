@@ -35,6 +35,7 @@ if(!empty($_POST['password_edit'])|| !empty($_POST['info_edit'])|| !empty($_POST
   $sex=mysqli_real_escape_string($con,$_POST['sex_edit']);
   $age=mysqli_real_escape_string($con,$_POST['age_edit']);
   $sport=mysqli_real_escape_string($con,$_POST['sport_edit']);
+  $_SESSION['usersport'] = $sport; 
   $salt= uniqid(mt_rand(),true);
   $password=$password.$salt;
   $password=sha1($password);

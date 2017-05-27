@@ -35,13 +35,22 @@ require'anslutning.php';
 
         if(isset($_POST['friendid']))
         {
+          $currentuser = $_SESSION['user'];
+          $currentfriend = $_POST['friendid'];
 
+          //$muiltipleFriendValidate = $con->query("SELECT * FROM relation WHERE '$currentuser' = '$currentfriend' ") or die("query failed");
+          //$matchArray = $matches->fetch_assoc();
+          //var_dump($matchArray);
+          //if($matchArray == 0)
+          //{
             $sql = "INSERT INTO `relation`(`follower`, `followed`) VALUES ('".$_SESSION['user']."', '".$_POST['friendid']."')";
 
             if($con->query($sql) == true)
             {
                 header("Location:friends.php");
             }
+          //}
+          //header("Location:friends.php");
 
         }
 
@@ -68,7 +77,7 @@ require'anslutning.php';
         echo "</form>";
 
           }
-          
+
           $matches->free();
         }
     ?>
@@ -78,8 +87,8 @@ require'anslutning.php';
         //$current=$_GET["userid"]
         //echo '<tr><td><a href="friend.php?userid='. $current .'</a>
         ?>
-        
-        
+
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="projekt.js" ></script>
     </body>
