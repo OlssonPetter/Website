@@ -11,20 +11,23 @@
   <body>
     <form name="terms_form" id="terms_form">
       <h1> Terms and conditions</h1>
-    <p> Man måste vara 18 år eller äldre för att skapa ett konto. </p>
-<p> Kund har själv ansvar över kundens kontos säkerhet.</p>
-<p>Kund är själv ansvarig för interaktioner med andra kund, och bör veta att vi inte utför någon bakgrundskontroll av våra kund. </p>
-<p>Spam är inte tillåtet.</p>
-<p>Endast ett konto per person får upprättas.</p>
-<p>Personangrepp och rasism är ej tillåtet. </p>
-<p>Kund får inte planera olagliga händelser eller begå olagliga handlingar med hjälp av- eller på e-tjänsten. </p>
-<p>Lösenord får inte delas.</p>
-<p>Det är inte tillåtet att lägga upp bilder på personer utan kläder.</p>
-<p>Annonsör får inte publicera annonser som inte tillhör kategorin hälsa. </p>
-<p>Kund måste använda e-tjänsten utifrån dess syfte, alltså träning och hälsa. </p>
-<p>Kund och annonsör får inte dela information med religiösa eller politiska med tanke att influera andra.</p>
-<p>E-tjänsten är en politiskt och religiöst obunden plattform.</p>
-<p> Bokningslänkarna som finns i e-tjänsten kontrolleras inte av Activ8 och Activ8 ansvarar därför inte för innehållet av dessa länkade hemsidor.</p>
+      <p>The customer must be 18 years or older to create an account.</p>
+      <p>The customer is responsible for its own  account security.</p>
+      <p>The customer is responsible for interactions with other customers, and should know that we do not perform any background checks of our customers.</p>
+      <p>Spam is not allowed.</p>
+      <p>Only one account per person may be created.</p>
+    <p>Personal harassment and racism is not allowed.</p>
+      <p>Customer may not plan illegal events or commit illegal acts with help from or on the e-service.</p>
+      <p>Passwords can not be shared.</p>
+      using another user’s account is prohibited.</p>
+      <p>It is not allowed to post pictures of people without clothes.</p>
+      <p>Advertiser may not publish ads that do not belong to the health category.</p>
+      <p>Customer must use the e-service based on its purpose, in other words for exercise and health.</p>
+      <p>Upload viruses or other malicious code or otherwise compromise the security of the Services is strictly forbidden.</p>
+      <p>Customers may not create a new account if Activ8 already has terminated the customer's previous account.</p>
+      <p>Customer may not share information with religious or political purpose in order to influence others. The e-service is a politically and religiously unrelated platform.</p>
+      <p>The booking links contained in the e-service are not verified by Activ8 and Activ8 is therefore not responsible for the content of these linked websites.</p>
+
 </form>
   </body>
       <link rel="stylesheet" href="projekt.css"/>
