@@ -59,11 +59,17 @@ if(!isset($_SESSION['user']))
         </form>
         </div>
         <div class="booking">
-            <form name="picture_edit" id="picture_edit" action="profile.php">
-            <p>Upload picture here</p>
-            <input type="file" name="pic" accept="image">
-                <input type="submit" class="button" value="Upload!">
+               <form method="post" action="profile.php" enctype="multipart/form-data">
+            <input type="hidden" name="size" value="1000000">
+            <div>
+                <input type="file" name="image">
+            </div>
+            <p>Upload profile picture</p>
+            <div>
+                <input type="submit" name="upload" value="Upload Image">
+            </div>
         </form>
+            
         </div>
     </body>
     <link rel="stylesheet" href="projekt.css"/>

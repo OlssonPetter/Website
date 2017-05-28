@@ -28,6 +28,23 @@ if(!isset($_SESSION['user']))
 session_start();
 
 require'anslutning.php';
+        
+if (isset($_POST['upload'])){
+        $target = "pictures/".basename($_FILES['image']['name']);
+       
+        $image = $_FILES['image']['name'];
+        $userId = $_SESSION['user'];
+       
+        $sql = "INSERT INTO user (image) VALUES ('$image') WHERE user_id = '$userId'";
+        mysqli_query($con, $sql);   
+    
+        if (move_uploaded_file($_FILES['image']['tmp_name'], $target)){
+            echo "Image uploaded sucessfully";
+        }
+        else {
+            echo "There was a problem uploading image";
+        }
+}
 
 if(!empty($_POST['password_edit'])|| !empty($_POST['info_edit'])|| !empty($_POST['sex_edit'])|| !empty($_POST['age_edit'])|| !empty($_POST['sport_edit']))
 {
