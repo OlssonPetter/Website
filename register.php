@@ -56,7 +56,7 @@ else
     <head>
     <title>ACTIV8</title>
     <div class="container">
-        <a href="index.php">Homepage</a>
+        <a href="index.php">ACTIV8</a>
         <a href="about.php">Terms</a>
     </div>
     </head>
