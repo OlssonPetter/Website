@@ -100,17 +100,19 @@ else
         $bild = $con->query("SELECT image FROM user WHERE 'user_id' = '$user'")
             or die("query failed");
         
-       if ($bild != 0)
-       {
-        while ($bilder = $bild->fetch_assoc())
-        {
-            echo "<div id='img_div'>";
-            echo "<img src='pictures/".$bilder['image']."'>";
-            echo "</div>";
+        print_r($bild);
+        
+       //if ($bild != 0)
+       //{
+        //while ($bilder = $bild->fetch_assoc())
+        //{
+          //  echo "<div id='img_div'>";
+            //echo "<img src='pictures/".$bilder['image']."'>";
+            //echo "</div>";
        
-        }  
-           $bild->free();
-       }
+        //}  
+        //   $bild->free();
+       //}
         
     $currentuser = $_SESSION['user'];
     $matches = $con->query("SELECT * FROM User WHERE user_id = '$currentuser'")
@@ -118,7 +120,6 @@ else
 
     if ($matches != 0)
       {
-        //echo "<table><tr><th>Email</th><th>User information</th><th>Gender</th><th>Age</th><th>Sport</th></tr>";
         while ($matchArray = $matches->fetch_assoc())
           {
 
@@ -130,10 +131,8 @@ else
         echo "<br /><b>Sport:</b> ".$matchArray['sports'];
         echo "</div>";
 
-
-            //echo "<tr><td>" .$matchArray['email']. "</td><td>" .$matchArray['user_info']. "</td><td>" .$matchArray['sex']. "</td><td>" .$matchArray['age']. "</td><td>" .$matchArray['sports']. "</td></tr>";
           }
-          //echo "</table>";
+          
           $matches->free();
       }
 ?>

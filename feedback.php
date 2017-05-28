@@ -7,8 +7,16 @@
     
     </head>
     <body>
+                <div class="container">
+          <a href="logout.php">Logout</a>
+          <a href="index.php">ACTIV8</a>
+          <a href="profile.php">Profile</a>
+          <a href="event.php">Events</a>
+          <a href="booking.php">Booking</a>
+          <a href="om.php">About</a>
+          <a href="friends.php">Training Partners</a>
+        </div>
         
-        $friendid = $_GET["userid"];
         
         <form action="friend.php" method="post">
         <p>What do you think about your last workout with this training partner?</p>
