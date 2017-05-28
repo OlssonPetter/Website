@@ -38,11 +38,10 @@ require'anslutning.php';
           $currentuser = $_SESSION['user'];
           $currentfriend = $_POST['friendid'];
 
-          //$muiltipleFriendValidate = $con->query("SELECT * FROM relation WHERE '$currentuser' = '$currentfriend' ") or die("query failed");
-          //$matchArray = $matches->fetch_assoc();
-          //var_dump($matchArray);
-          //if($matchArray == 0)
-          //{
+          $muiltipleFriendValidate = $con->query("SELECT * FROM relation WHERE follower ='$currentuser' AND followed = '$currentfriend' ") or die("muiltipleFriendValidate fugerade inte");
+          $dubletArray = $muiltipleFriendValidate->fetch_assoc();
+          if($dubletArray == 0)
+          {
             $sql = "INSERT INTO `relation`(`follower`, `followed`)
                     VALUES ('".$_SESSION['user']."', '".$_POST['friendid']."')";
 
@@ -50,8 +49,8 @@ require'anslutning.php';
             {
                 header("Location:friends.php");
             }
-          //}
-          //header("Location:friends.php");
+          }
+
 
         }
 

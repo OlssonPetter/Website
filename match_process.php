@@ -33,7 +33,7 @@ if(!isset($_SESSION['user']))
     session_start();
 
     $currentUserSport = $_SESSION['usersport'];
-    $currentUser = $_SESSION['user'];    
+    $currentUser = $_SESSION['user'];
     $matches = $con->query("SELECT * FROM User WHERE sports = '$currentUserSport' AND user_id <> $currentUser")
     or die("query failed");
 
