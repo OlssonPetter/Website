@@ -21,29 +21,30 @@ if(!isset($_SESSION['user']))
     </div>
     </head>
     <body>
-        <h2>Personal trainer</h2>
+      <h3 class="title_h1"> Scroll down to see training facilities</h3>
+        <form><h2>Personal trainer</h2> </form>
         <div class="booking">
-        <p>Press here to make booking at Actic</p>
+       <form><p>Press here to make booking at Actic</p> </form>
         <a href="http://www.actic.se/traning/personlig-traning/" class="button" type="button" >Visit website!</a>
-        </div>
+      </div>
 
         <div class="booking">
-        <p>Press here to make booking at Friskis&Svettis</p>
+      <form>  <p>Press here to make booking at Friskis&Svettis</p> </form>
         <a href="http://www.uppsala.friskissvettis.se/" class="button" type="button" >Visit website!</a>
         </div>
 
         <div class="booking">
-        <p>Press here to make booking at Campus1477</p>
+      <form>  <p>Press here to make booking at Campus1477</p> </form>
         <a href="http://www.campus1477.se/sv/tjanster/gym-personlig-traning/personlig-traning/" class="button" type="button" >Visit website!</a>
         </div>
 
-        <h2>Training facilities</h2>
+        <form><h2>Training facilities</h2> </form>
         <div class="booking">
-        <p>Press here to make booking at Uppsala tennisklubb! </p>
+      <form>  <p>Press here to make booking at Uppsala tennis club </p> </form>
         <a href="http://www.utk.se/" class="button" type="button" >Visit website!</a>
         </div>
         <div class="booking">
-        <p>Press here to make booking at Golf.se!</p>
+      <form>  <p>Press here to make booking at Golf.se</p> </form>
         <a href="http://www.golf.se/" class="button" type="button" >Visit website!</a>
         </div>
 
