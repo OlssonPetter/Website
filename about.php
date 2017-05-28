@@ -6,6 +6,7 @@
 <div class="container">
     <a href="index.php">ACTIV8</a>
     <a href="about.php">Terms</a>
+    <a href="om.php">About</a>
 </div>
 </head>
   <body>
