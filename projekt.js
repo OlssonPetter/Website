@@ -62,18 +62,19 @@ function validateLogin(){
 }
 
 function validateProfileEdit(){
-  var pass = document.MyRegForm.password_edit.value;
-  if (pass == "" || pass.trim() == '')
-  {
-    alert("Invalid password!");
-    return false;
-  }
-  var age = document.MyRegForm.age_edit.value;
+  var age = document.MyProfileRegForm.age_edit.value;
   if(age < 18 || age == "" || age.trim() == '')
   {
     alert("You must be over 18 year old in order to create an account!");
     return false;
   }
+  var pass = document.MyProfileRegForm.password_edit.value;
+  if (pass == "" || pass.trim() == '')
+  {
+    alert("Invalid password!");
+    return false;
+  }
+
   return true;
 }
 

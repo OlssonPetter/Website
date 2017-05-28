@@ -41,6 +41,8 @@ if(!empty($_POST['password_edit'])|| !empty($_POST['info_edit'])|| !empty($_POST
   $password=$password.$salt;
   $password=sha1($password);
 
+  
+
   $results=$con->query("SELECT * FROM User WHERE email ='$email'");
   $records=$results-> fetch_assoc();
   if(count($records)> 0)
@@ -62,7 +64,7 @@ else
     }
 }
 
-    $currentuser = $_SESSION['user'];    
+    $currentuser = $_SESSION['user'];
     $matches = $con->query("SELECT * FROM User WHERE user_id = '$currentuser'")
         or die("query failed");
 

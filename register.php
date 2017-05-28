@@ -26,7 +26,7 @@ if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !emp
   }
   if ($age < 18)
   {
-    echo"You are too young my friend!";
+    echo"Must be over 18 years old";
     exit();
   }
   $results=$con->query("SELECT * FROM User WHERE email ='$email'");
@@ -41,7 +41,7 @@ if(!empty($_POST['email_register'])|| !empty($_POST['password_register'])|| !emp
   }
 if($con->query($sql)===TRUE)
 {
-  
+
   header("Location: login.php");
 }
 else
