@@ -34,7 +34,7 @@ body {
      width:  160px;
      padding:  0px!important;
      font-size:  14px;
-     color: orange;
+     color: darkorange;
 
  }
 
@@ -135,7 +135,7 @@ form {
      width:  400px;
      padding:  0px!important;
      font-size:  40px;
-     color: orange;
+     color: darkorange;
 }
 #button_match:hover  {
      color:  black;
