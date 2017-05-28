@@ -34,9 +34,17 @@ if (isset($_POST['upload'])){
        
         $image = $_FILES['image']['name'];
         $userId = $_SESSION['user'];
-       
-        $sql = "INSERT INTO user (image) VALUES ('$image') WHERE user_id = '$userId'";
-        mysqli_query($con, $sql);   
+    
+        $sql= "UPDATE user SET image='$image' WHERE user_id = $userId";
+    
+        if($con->query($sql)===TRUE)
+        {
+            echo("Information updated");
+        }
+        else
+        {
+    echo"Error:".$sql."<br>".$con->error;
+    }
     
         if (move_uploaded_file($_FILES['image']['tmp_name'], $target)){
             echo "Image uploaded sucessfully";
@@ -45,7 +53,8 @@ if (isset($_POST['upload'])){
             echo "There was a problem uploading image";
         }
 }
-
+       
+        
 if(!empty($_POST['password_edit'])|| !empty($_POST['info_edit'])|| !empty($_POST['sex_edit'])|| !empty($_POST['age_edit'])|| !empty($_POST['sport_edit']))
 {
   $password=mysqli_real_escape_string($con,$_POST['password_edit']);
@@ -81,6 +90,22 @@ else
     }
 }
 
+        $user = $_SESSION['user'];
+        $bild = $con->query("SELECT image FROM user WHERE 'user_id' = '$user'")
+            or die("query failed");
+        
+       if ($bild != 0)
+       {
+        while ($bilder = $bild->fetch_assoc())
+        {
+            echo "<div id='img_div'>";
+            echo "<img src='pictures/".$bilder['image']."'>";
+            echo "</div>";
+       
+        }  
+           $bild->free();
+       }
+        
     $currentuser = $_SESSION['user'];
     $matches = $con->query("SELECT * FROM User WHERE user_id = '$currentuser'")
         or die("query failed");
