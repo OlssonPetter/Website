@@ -19,7 +19,7 @@ if(!isset($_SESSION['user']))
         <a href="event.php">Events</a>
         <a href="booking.php">Booking</a>
         <a href="om.php">About</a>
-        <a href="friends.php">Friends</a>
+        <a href="friends.php">Training Partners</a>
       </div>
     </head>
     <body>
@@ -69,7 +69,7 @@ if(!isset($_SESSION['user']))
                 <input type="submit" name="upload" value="Upload Image">
             </div>
         </form>
-            
+
         </div>
     </body>
     <link rel="stylesheet" href="projekt.css"/>

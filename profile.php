@@ -19,7 +19,7 @@ if(!isset($_SESSION['user']))
       <a href="event.php">Events</a>
       <a href="booking.php">Booking</a>
       <a href="om.php">About</a>
-      <a href="friends.php">Friends</a>
+      <a href="friends.php">Training Partners</a>
     </div>
     </head>
     <body>
@@ -28,10 +28,10 @@ if(!isset($_SESSION['user']))
 session_start();
 
 require'anslutning.php';
-        
+
 if (isset($_POST['upload'])){
         $target = "pictures/".basename($_FILES['image']['name']);
-       
+
         $image = $_FILES['image']['name'];
         $userId = $_SESSION['user'];
     
@@ -46,6 +46,12 @@ if (isset($_POST['upload'])){
     echo"Error:".$sql."<br>".$con->error;
     }
     
+
+
+        $sql = "INSERT INTO user (image) VALUES ('$image') WHERE user_id = '$userId'";
+        mysqli_query($con, $sql);
+
+
         if (move_uploaded_file($_FILES['image']['tmp_name'], $target)){
             echo "Image uploaded sucessfully";
         }
@@ -67,7 +73,7 @@ if(!empty($_POST['password_edit'])|| !empty($_POST['info_edit'])|| !empty($_POST
   $password=$password.$salt;
   $password=sha1($password);
 
-  
+
 
   $results=$con->query("SELECT * FROM User WHERE email ='$email'");
   $records=$results-> fetch_assoc();

@@ -20,10 +20,10 @@ if(!isset($_SESSION['user']))
     <a href="event.php">Events</a>
     <a href="booking.php">Booking</a>
     <a href="om.php">About</a>
-    <a href="friends.php">Friends</a>
+    <a href="friends.php">Training Partners</a>
   </div>
     <meta charset="utf-8">
-    <h1 class ="title_h1"> Here are your friends, contact them via email to start working out!</h1>
+    <h1 class ="title_h1"> Here are your trainingpartners, contact them via email to start working out!</h1>
 </head>
 <body>
     <?php

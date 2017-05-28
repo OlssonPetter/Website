@@ -20,8 +20,8 @@
         <a href="event.php">Events</a>
         <a href="booking.php">Booking</a>
         <a href="om.php">About</a>
-        <a href="friends.php">Friends</a>
-        <a href="match.php">Find friends</a>
+        <a href="friends.php">Training Partners</a>
+        <a href="match.php">Find training partners</a>
         <a href="delete.php">Delete user</a>
     </div>
           <h1>Welcome, you are now logged in!</h1>

@@ -23,8 +23,8 @@
         <a href="event.php">Events</a>
         <a href="booking.php">Booking</a>
         <a href="about.php">About</a>
-        <a href="friends.php">Friends</a>
-        <a href="match.php">Find friends</a>
+        <a href="friends.php">Training Partners</a>
+        <a href="match.php">Find training Partners</a>
         <a href="delete.php">Delete user</a>
     </div>
   </head>

@@ -11,7 +11,7 @@
         <a href="event.php">Events</a>
         <a href="booking.php">Booking</a>
         <a href="om.php">About</a>
-        <a href="friends.php">Friends</a>
+        <a href="friends.php">Training Partners</a>
       </div>
     </head>
 <body>
@@ -89,7 +89,7 @@ require'anslutning.php';
       }
 
 ?>
-    
+
 </body>
     <link rel="stylesheet" href="projekt.css"/>
     <meta charset="utf-8">
