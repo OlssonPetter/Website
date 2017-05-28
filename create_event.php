@@ -22,6 +22,7 @@ if(!isset($_SESSION['user']))
     </div>
     </head>
     <body>
+      <h1 class="title_h1"> Type in event information here</h1>
         <form name="Create_Event_Form" id="Create_Event_Form" action="event.php"method="post" onsubmit="return validateEvent()">
         <p></p><input placeholder="Enter event name..." name="event_name"></p>
         <p><input placeholder="Enter event information..."name="event_info"></p>
