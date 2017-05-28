@@ -23,7 +23,7 @@ session_start();
           <a href="event.php">Events</a>
           <a href="booking.php">Booking</a>
           <a href="om.php">About</a>
-          <a href="friends.php">Friends</a>
+          <a href="friends.php">Training Partners</a>
         </div>
 
     <form name="FormMatch" id="FormMatch" action="match_process.php" method="post">
