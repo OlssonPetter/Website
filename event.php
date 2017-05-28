@@ -54,7 +54,8 @@ require'anslutning.php';
 
     }
     ?>
-    <h2 class="title_h1">All sport events near you!</h2>
+      <a href="create_event.php" class="button" type="button" >+</a>
+    <h2 class="title_">All events</h2>
     <?php
        $matches = $con->query("SELECT * FROM Event")
             or die("query failed");
@@ -88,7 +89,7 @@ require'anslutning.php';
       }
 
 ?>
-    <a href="create_event.php" class="button" type="button" >+</a>
+    
 </body>
     <link rel="stylesheet" href="projekt.css"/>
     <meta charset="utf-8">
