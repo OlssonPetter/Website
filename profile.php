@@ -62,9 +62,7 @@ else
     }
 }
 
-    $currentuser = $_SESSION['user'];
-    var_dump($_SESSION['user']);
-    echo "$currentuser";
+    $currentuser = $_SESSION['user'];    
     $matches = $con->query("SELECT * FROM User WHERE user_id = '$currentuser'")
         or die("query failed");
 

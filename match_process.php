@@ -24,6 +24,7 @@ if(!isset($_SESSION['user']))
   </head>
   <body>
     <h1>Here are your matches, click their names to find out more about them! </h1>
+    <h2>Mathes in Uppsala:</h2>
 
     <?php
 
@@ -32,9 +33,7 @@ if(!isset($_SESSION['user']))
     session_start();
 
     $currentUserSport = $_SESSION['usersport'];
-    $currentUser = $_SESSION['user'];
-    var_dump($_SESSION['usersport']);
-    echo "$currentuser";
+    $currentUser = $_SESSION['user'];    
     $matches = $con->query("SELECT * FROM User WHERE sports = '$currentUserSport' AND user_id <> $currentUser")
     or die("query failed");
 

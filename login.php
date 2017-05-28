@@ -40,7 +40,7 @@ if(!empty($_POST['email_login']) && !empty($_POST['password_login']))
    }
    else
    {
-     die("Password and Username did not match, please register or try again");
+     echo"Password and Username did not match, please register or try again!";
    }
  }
 
