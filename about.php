@@ -22,13 +22,12 @@
       <p>Passwords can not be shared.</p>
       using another user’s account is prohibited.</p>
       <p>It is not allowed to post pictures of people without clothes.</p>
-      <p>Advertiser may not publish ads that do not belong to the health category.</p>
       <p>Customer must use the e-service based on its purpose, in other words for exercise and health.</p>
       <p>Upload viruses or other malicious code or otherwise compromise the security of the Services is strictly forbidden.</p>
       <p>Customers may not create a new account if Activ8 already has terminated the customer's previous account.</p>
       <p>Customer may not share information with religious or political purpose in order to influence others. The e-service is a politically and religiously unrelated platform.</p>
       <p>The booking links contained in the e-service are not verified by Activ8 and Activ8 is therefore not responsible for the content of these linked websites.</p>
-      <p>If you dont follow these terms your account could be taken away.</p>
+      <p>If you don't follow these terms your account will be terminated.</p>
 
 </form>
   </body>
