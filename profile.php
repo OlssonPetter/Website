@@ -104,19 +104,17 @@ else
         $bild = $con->query("SELECT image FROM user WHERE 'user_id' = '$user'")
             or die("query failed");
         
-        print_r($bild);
-        
-       //if ($bild != 0)
-       //{
-        //while ($bilder = $bild->fetch_assoc())
-        //{
-          //  echo "<div id='img_div'>";
-            //echo "<img src='pictures/".$bilder['image']."'>";
-            //echo "</div>";
+       if ($bild != 0)
+       {
+        while ($bilder = $bild->fetch_assoc())
+        {
+            echo "<div id='img_div'>";
+            echo "<img src='pictures/".$bilder['image']."'>";
+            echo "</div>";
        
-        //}  
-        //   $bild->free();
-       //}
+        }  
+           $bild->free();
+       }
         
     $currentuser = $_SESSION['user'];
     $matches = $con->query("SELECT * FROM User WHERE user_id = '$currentuser'")
