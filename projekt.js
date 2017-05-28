@@ -1,9 +1,15 @@
 var highlight_form = document.getElementById('MyRegForm')
 highlight_form.addEventListener('submit', function(event){
-
+    
     if (document.getElementById('checkbox').checked)
         {
             alert("Welcome to Activ8!");
+            return false;
+        }
+    if (age_edit < 18)
+        {
+            event.preventDefault();
+            alert("You have to be at least 18 years old!");
             return false;
         }
     else {
@@ -39,6 +45,7 @@ function validateRegister(){
   if(age < 18 || age == "" || age.trim() == '')
   {
     alert("You must be over 18 year old in order to create an account!")
+    return false;
   }
   return true;
 }
@@ -62,13 +69,14 @@ function validateLogin(){
 }
 
 function validateProfileEdit(){
-  var age = document.MyProfileRegForm.age_edit.value;
+
+  var age = document.MyEditForm.age_edit.value;
   if(age < 18 || age == "" || age.trim() == '')
   {
     alert("You must be over 18 year old in order to create an account!");
     return false;
   }
-  var pass = document.MyProfileRegForm.password_edit.value;
+  var pass = document.MyEditForm.password_edit.value;
   if (pass == "" || pass.trim() == '')
   {
     alert("Invalid password!");

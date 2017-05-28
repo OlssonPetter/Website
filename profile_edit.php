@@ -29,7 +29,7 @@ if(!isset($_SESSION['user']))
 
     ?>
         <div class="booking">
-        <form name="MyRegForm" id="MyProfileRegForm" action="profile.php"method="post">
+        <form name="MyRegForm" id="MyProfileRegForm" action="profile.php"method="post" onsubmit="return validateProfileEdit()">
           <p> Update password</p>
         <p><input type="password" placeholder="Enter your new password..." name="password_edit"></p>
         <p> Update your profile information</p>

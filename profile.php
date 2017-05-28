@@ -74,7 +74,11 @@ if(!empty($_POST['password_edit'])|| !empty($_POST['info_edit'])|| !empty($_POST
   $password=sha1($password);
 
 
-
+ if ($age < 18)
+  {
+    echo"Must be over 18 years old";
+    exit();
+  }
   $results=$con->query("SELECT * FROM User WHERE email ='$email'");
   $records=$results-> fetch_assoc();
   if(count($records)> 0)
