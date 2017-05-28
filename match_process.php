@@ -18,13 +18,13 @@ if(!isset($_SESSION['user']))
       <a href="profile.php">Profile</a>
       <a href="event.php">Events</a>
       <a href="booking.php">Booking</a>
-      <<a href="om.php">About</a>
+      <a href="om.php">About</a>
       <a href="friends.php">Friends</a>
     </div>
   </head>
   <body>
-    <h1>Here are your matches, click their names to find out more about them! </h1>
-    <h2>Mathes in Uppsala:</h2>
+    <h1 class="title_h1">Here are your matches, click their names to find out more about them! </h1>
+    <h2>Matches in Uppsala:</h2>
 
     <?php
 
