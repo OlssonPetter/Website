@@ -28,6 +28,7 @@
       <p>Customers may not create a new account if Activ8 already has terminated the customer's previous account.</p>
       <p>Customer may not share information with religious or political purpose in order to influence others. The e-service is a politically and religiously unrelated platform.</p>
       <p>The booking links contained in the e-service are not verified by Activ8 and Activ8 is therefore not responsible for the content of these linked websites.</p>
+      <p>If you dont follow these terms your account could be taken away.</p>
 
 </form>
   </body>
