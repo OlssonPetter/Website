@@ -45,7 +45,7 @@ require'anslutning.php';
 
         if($con->query($sql)===TRUE)
             {
-                echo("Event created");
+                echo("");
             }
         else
             {
@@ -54,7 +54,7 @@ require'anslutning.php';
 
     }
     ?>
-      <a href="create_event.php" class="button" type="button" >+</a>
+      <a id="event_knapp" href="create_event.php" class="button" type="button" >Create event</a>
     <h2 class="title_">All events</h2>
     <?php
        $matches = $con->query("SELECT * FROM Event")
