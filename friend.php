@@ -73,7 +73,7 @@ require'anslutning.php';
         echo "<br /><b>Sport:</b> ".$matchArray['sports'];
 
         echo '<input type="hidden" name="friendid" value="'.$matchArray["user_id"] .'">';
-        echo '<button class=\"button\"type="submit">Lägg till vän</button>';
+        echo '<button class=\"button\"type="submit">Add training partner</button>';
         echo "</form>";
 
           }
