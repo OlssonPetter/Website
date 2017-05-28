@@ -50,7 +50,7 @@ if(!empty($_POST['email_login']) && !empty($_POST['password_login']))
     <head>
     <title>ACTIV8</title>
     <div class="container">
-        <a href="index.php">Homepage</a>
+        <a href="index.php">ACTIV8</a>
         <a href="om.php">About</a>
     </div>
     </head>
