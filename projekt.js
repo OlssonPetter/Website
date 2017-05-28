@@ -6,13 +6,8 @@ highlight_form.addEventListener('submit', function(event){
             alert("Welcome to Activ8!");
             return false;
         }
-    if (age_edit < 18)
-        {
-            event.preventDefault();
-            alert("You have to be at least 18 years old!");
-            return false;
-        }
-    else {
+    else 
+    {
         event.preventDefault();
         alert("You have to accept the terms and conditions.");
         return false;
