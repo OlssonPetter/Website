@@ -1,3 +1,20 @@
+<?php
+
+require_once("anslutning.php");
+
+if(isset($_POST['feedback']))
+{
+    
+    $query = "INSERT INTO feedback (`user_id`, `feedback`) VALUES ('".$_POST['userid']."', '".$_POST['feedback']."')";
+    if(($con->query($query))==true)
+    {
+        header("Location: friend.php?userid=".$_POST['userid']."");
+    }
+    
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,9 +35,10 @@
         </div>
 
 
-        <form action="friend.php" method="post" action="friends.php">
+        <form method="post" action="feedback.php">
         <p>What do you think about your last workout with this training partner?</p>
         <textarea type ="text" id="feedback" name ="feedback" placeholder = "Please write your feedback here..."> </textarea>
+            <input type="hidden" name="userid" value="<?php echo $_GET['userid']; ?>" />
         <p><input id="feedback" type= "submit" value="Leave feedback!" class="button"></p>
         </form>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

@@ -80,9 +80,23 @@ require'anslutning.php';
 
           $matches->free();
         }
+        
+        if($sel="SELECT * FROM `feedback` WHERE `user_id` = ".$_GET['userid'])
+        {
+            if($res=($con->query($sel)))
+            {
+                echo "<table><tr><th>This user's feedback</th></tr>";    
+                while($row = $res->fetch_assoc())
+                {
+                echo '<tr><td>' .$row["feedback"] . '</td></tr>';
+                }
+            }
+        }
     ?>
         <p>How was your workout with this training partner?</p>
-        <a href="feedback.php" class="button">Add feedback</a>
+        <?php 
+        echo '<a href=feedback.php?userid='. $_GET["userid"] . '     class="button">Add feedback</a>';
+        ?> 
         <?php
         //$current=$_GET["userid"]
         //echo '<tr><td><a href="friend.php?userid='. $current .'</a>

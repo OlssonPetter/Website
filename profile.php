@@ -101,20 +101,15 @@ else
 }
 
         $user = $_SESSION['user'];
-        $bild = $con->query("SELECT image FROM user WHERE 'user_id' = '$user'")
-            or die("query failed");
-        
-       if ($bild != 0)
-       {
+        $bild = $con->query("SELECT `image` FROM `user` WHERE `user_id` = '".$user."'");
         while ($bilder = $bild->fetch_assoc())
         {
             echo "<div id='img_div'>";
-            echo "<img src='pictures/".$bilder['image']."'>";
+            echo "<img src='pictures/".$bilder['image']."' height=200 width=200>";
             echo "</div>";
        
         }  
            $bild->free();
-       }
         
     $currentuser = $_SESSION['user'];
     $matches = $con->query("SELECT * FROM User WHERE user_id = '$currentuser'")
